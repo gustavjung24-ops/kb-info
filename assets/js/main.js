@@ -64,21 +64,21 @@ document.addEventListener('DOMContentLoaded', () => {
         {
             group: "Lĩnh vực",
             items: [
-                { title: "Quản trị kinh doanh", keywords: "quản trị kinh doanh sales phát triển thị trường", url: "#competencies", type: "scroll" },
-                { title: "Ứng Dụng Thông Minh", keywords: "ứng dụng thông minh website app ai giải pháp số", url: "#domains", type: "scroll" },
-                { title: "The Hair Lab", keywords: "the hair lab salon tóc mỹ phẩm tóc", url: "#domains", type: "scroll" },
-                { title: "Truyền Động Công Nghiệp", keywords: "truyền động công nghiệp phụ tùng mã sản phẩm b2b", url: "#domains", type: "scroll" }
+                { title: "Quản trị kinh doanh", keywords: "quản trị kinh doanh sales phát triển thị trường", url: "ho-so-quan-tri-kinh-doanh.html", type: "link" },
+                { title: "Ứng Dụng Thông Minh", keywords: "ứng dụng thông minh website app ai giải pháp số", url: "https://www.ungdungthongminh.shop/thiet-ke-web", type: "link" },
+                { title: "The Hair Lab", keywords: "the hair lab salon tóc mỹ phẩm tóc", url: "https://www.thehairlab.top/s/salon-test-mau-01/", type: "link" },
+                { title: "Truyền Động Công Nghiệp", keywords: "truyền động công nghiệp phụ tùng mã sản phẩm b2b", url: "https://www.truyendongcongnghiep.top/tra-ma-bao-gia", type: "link" }
             ]
         },
         {
             group: "Dự án & Công cụ",
             items: [
-                { title: "Web salon tóc", keywords: "web salon tóc", url: "#projects", type: "scroll" },
-                { title: "Web doanh nghiệp nhỏ", keywords: "web doanh nghiệp nhỏ", url: "#projects", type: "scroll" },
-                { title: "QR đặt lịch", keywords: "qr đặt lịch", url: "#projects", type: "scroll" },
-                { title: "QR báo giá", keywords: "qr báo giá", url: "#projects", type: "scroll" },
-                { title: "App desktop quản lý", keywords: "app desktop quản lý", url: "#projects", type: "scroll" },
-                { title: "Tra mã sản phẩm B2B", keywords: "tra mã sản phẩm b2b", url: "#projects", type: "scroll" }
+                { title: "Web salon tóc", keywords: "web salon tóc", url: "https://www.thehairlab.top/s/salon-test-mau-01/", type: "link" },
+                { title: "Web doanh nghiệp nhỏ", keywords: "web doanh nghiệp nhỏ", url: "https://www.ungdungthongminh.shop/mau-demo/company", type: "link" },
+                { title: "QR đặt lịch", keywords: "qr đặt lịch", url: "https://www.thehairlab.top/s/salon-test-mau-02/", type: "link" },
+                { title: "QR báo giá", keywords: "qr báo giá", url: "mau-danh-thiep-dien-tu.html", type: "link" },
+                { title: "App desktop quản lý", keywords: "app desktop quản lý", url: "https://www.ungdungthongminh.shop/phan-mem", type: "link" },
+                { title: "Tra mã sản phẩm B2B", keywords: "tra mã sản phẩm b2b", url: "https://www.truyendongcongnghiep.top/tra-ma-bao-gia", type: "link" }
             ]
         },
         {
