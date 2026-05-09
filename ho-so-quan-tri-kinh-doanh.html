@@ -69,22 +69,136 @@
     @media (min-width:768px){
       .industry-grid{grid-template-columns:repeat(2,1fr);}
     }
+    .cv-hero-pro {
+      padding: 7rem 0 4rem;
+      background:
+        radial-gradient(circle at top right, rgba(200,164,107,.18), transparent 34%),
+        linear-gradient(135deg, #F7F4ED 0%, #F1ECE3 100%);
+    }
+    .cv-hero-inner {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 2rem;
+      align-items: center;
+    }
+    .cv-hero-copy {
+      max-width: 760px;
+    }
+    .cv-hero-panel {
+      background: #FFFFFF;
+      border: 1px solid #D9D4C7;
+      border-radius: 30px;
+      padding: 1.35rem;
+      box-shadow: 0 18px 45px rgba(16,42,67,.12);
+    }
+    .cv-profile-box {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      padding-bottom: 1rem;
+      border-bottom: 1px solid #E7DFD2;
+      margin-bottom: 1rem;
+    }
+    .cv-profile-box img {
+      width: 74px;
+      height: 74px;
+      border-radius: 22px;
+      object-fit: cover;
+      box-shadow: 0 10px 26px rgba(16,42,67,.16);
+    }
+    .cv-profile-name {
+      font-weight: 900;
+      color: #0B1F33;
+      font-size: 1.15rem;
+      margin-bottom: .25rem;
+    }
+    .cv-profile-role {
+      color: #667085;
+      font-size: .92rem;
+      line-height: 1.5;
+    }
+    .cv-metric-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: .75rem;
+    }
+    .cv-metric {
+      background: #F7F4ED;
+      border: 1px solid #E3D9C8;
+      border-radius: 18px;
+      padding: .95rem;
+    }
+    .cv-metric strong {
+      display: block;
+      color: #102A43;
+      font-size: 1rem;
+      margin-bottom: .25rem;
+    }
+    .cv-metric span {
+      color: #667085;
+      font-size: .88rem;
+      line-height: 1.5;
+    }
+    @media (min-width: 900px) {
+      .cv-hero-inner {
+        grid-template-columns: minmax(0, 1.15fr) minmax(340px, .85fr);
+      }
+      .cv-metric-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
   </style>
 </head>
 <body class="cv-page">
   <main>
-    <section class="cv-hero">
+    <section class="cv-hero-pro">
       <div class="container">
         <a href="index.html" class="cv-secondary" style="display:inline-flex;margin-bottom:2rem;">← Về trang chính</a>
-        <div class="cv-kicker">Business Profile</div>
-        <h1 class="cv-title">Quản trị kinh doanh & phát triển thị trường thực chiến</h1>
-        <p class="cv-lead">
-          Hồ sơ năng lực của Khương Bình tập trung vào kinh nghiệm bán hàng, phát triển thị trường,
-          xây dựng kênh phân phối, quản lý dữ liệu khách hàng và ứng dụng công cụ số vào hoạt động kinh doanh.
-        </p>
-        <div class="cv-actions">
-          <a class="cv-primary" href="tel:0902964685">Gọi trao đổi</a>
-          <a class="cv-secondary" href="https://zalo.me/0902964685">Nhắn Zalo</a>
+
+        <div class="cv-hero-inner">
+          <div class="cv-hero-copy">
+            <div class="cv-kicker">Business Profile</div>
+            <h1 class="cv-title">Hồ sơ quản trị kinh doanh & phát triển thị trường thực chiến</h1>
+            <p class="cv-lead">
+              Khương Bình tập trung vào phát triển thị trường, tổ chức dữ liệu khách hàng,
+              xây dựng kênh bán hàng và ứng dụng công cụ số vào vận hành kinh doanh.
+              Kinh nghiệm được hình thành từ các nhóm ngành thực tế như B2B công nghiệp,
+              Hair Salon, sản phẩm tiêu dùng, website doanh nghiệp nhỏ và giải pháp QR profile.
+            </p>
+            <div class="cv-actions">
+              <a class="cv-primary" href="tel:0902964685">Gọi trao đổi</a>
+              <a class="cv-secondary" href="https://zalo.me/0902964685">Nhắn Zalo</a>
+            </div>
+          </div>
+
+          <aside class="cv-hero-panel">
+            <div class="cv-profile-box">
+              <img src="assets/images/avatar.jpg" alt="Khương Bình" />
+              <div>
+                <div class="cv-profile-name">Khương Bình</div>
+                <div class="cv-profile-role">Quản trị kinh doanh, phát triển thị trường & giải pháp số thực chiến</div>
+              </div>
+            </div>
+
+            <div class="cv-metric-grid">
+              <div class="cv-metric">
+                <strong>B2B kỹ thuật</strong>
+                <span>Phụ tùng truyền động, mã hàng, báo giá và khách nhà máy.</span>
+              </div>
+              <div class="cv-metric">
+                <strong>Hair Salon</strong>
+                <span>Mỹ phẩm tóc, dịch vụ salon, tư vấn và chăm sóc khách.</span>
+              </div>
+              <div class="cv-metric">
+                <strong>Website / QR</strong>
+                <span>Trang giới thiệu, QR profile, QR báo giá và form liên hệ.</span>
+              </div>
+              <div class="cv-metric">
+                <strong>Dữ liệu sales</strong>
+                <span>Làm sạch dữ liệu, phân nhóm khách và hỗ trợ chăm sóc lại.</span>
+              </div>
+            </div>
+          </aside>
         </div>
       </div>
     </section>
