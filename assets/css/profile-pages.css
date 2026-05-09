@@ -151,3 +151,122 @@ body:has(.sample-hero-pro) {
 .industry-card p {
   color: var(--profile-muted) !important;
 }
+
+/* Digital card explainer */
+.digital-explainer {
+  margin-bottom: 2rem;
+  background: rgba(255,255,255,.92);
+  border: 1px solid rgba(16,42,67,.12);
+  border-radius: 32px;
+  padding: 1.4rem;
+  box-shadow: 0 24px 70px rgba(16,42,67,.12);
+}
+
+.digital-explainer-head {
+  display: grid;
+  gap: .8rem;
+  margin-bottom: 1.4rem;
+}
+
+.digital-explainer-kicker {
+  color: var(--profile-gold);
+  font-weight: 900;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  font-size: .78rem;
+}
+
+.digital-explainer h2 {
+  margin: 0;
+  color: var(--profile-ink);
+  font-size: clamp(1.7rem, 3vw, 2.4rem);
+  letter-spacing: -.04em;
+}
+
+.digital-explainer-lead {
+  margin: 0;
+  color: var(--profile-muted);
+  line-height: 1.75;
+  max-width: 860px;
+}
+
+.digital-feature-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+.digital-feature-card {
+  border-radius: 24px;
+  padding: 1.15rem;
+  background: #F8F5EF;
+  border: 1px solid rgba(16,42,67,.1);
+}
+
+.digital-feature-card strong {
+  display: block;
+  color: var(--profile-ink);
+  margin-bottom: .35rem;
+  font-size: 1rem;
+}
+
+.digital-feature-card p {
+  margin: 0;
+  color: var(--profile-muted);
+  line-height: 1.65;
+  font-size: .95rem;
+}
+
+.digital-use-box {
+  margin-top: 1.2rem;
+  border-radius: 26px;
+  padding: 1.2rem;
+  background: linear-gradient(135deg, #061727 0%, #102A43 100%);
+  color: #fff;
+}
+
+.digital-use-box h3 {
+  margin: 0 0 .9rem;
+  color: #fff;
+}
+
+.digital-use-steps {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: .75rem;
+}
+
+.digital-use-step {
+  display: flex;
+  gap: .75rem;
+  align-items: flex-start;
+  color: rgba(255,255,255,.78);
+  line-height: 1.6;
+}
+
+.digital-use-step span {
+  flex: 0 0 32px;
+  width: 32px;
+  height: 32px;
+  border-radius: 12px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(216,183,106,.22);
+  color: #F3D28A;
+  font-weight: 900;
+}
+
+@media (min-width: 768px) {
+  .digital-explainer {
+    padding: 2rem;
+  }
+
+  .digital-feature-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .digital-use-steps {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
