@@ -1422,3 +1422,205 @@ body {
     display: none;
   }
 }
+
+/* FIX: stable QR position + compact bottom grid */
+.qr-hero {
+  position: relative !important;
+  min-height: 168px !important;
+  padding: 1rem .85rem 3.95rem !important;
+}
+
+.qr-hero-inner {
+  position: relative !important;
+  z-index: 2 !important;
+  grid-template-columns: 78px 1fr !important;
+  gap: .65rem !important;
+  padding-top: .55rem !important;
+  padding-right: 88px !important;
+  align-items: center !important;
+}
+
+.qr-avatar {
+  width: 76px !important;
+  height: 76px !important;
+}
+
+.qr-check {
+  width: 24px !important;
+  height: 24px !important;
+  right: -1px !important;
+  bottom: 2px !important;
+}
+
+.qr-name {
+  font-size: 1.32rem !important;
+  line-height: 1.05 !important;
+}
+
+.qr-role {
+  font-size: .76rem !important;
+  margin: .18rem 0 .3rem !important;
+}
+
+.qr-info {
+  font-size: .66rem !important;
+  gap: .12rem !important;
+}
+
+.qr-mini-qr {
+  position: absolute !important;
+  top: 3.15rem !important;
+  right: .72rem !important;
+  bottom: auto !important;
+  width: 76px !important;
+  z-index: 6 !important;
+  padding: .28rem !important;
+  border-radius: 12px !important;
+}
+
+.qr-mini-qr small {
+  font-size: .46rem !important;
+  line-height: 1.05 !important;
+  margin-top: .22rem !important;
+}
+
+.qr-main {
+  display: block !important;
+  margin-top: -1rem !important;
+  padding: 0 .72rem 0 !important;
+  overflow: visible !important;
+}
+
+.qr-actions {
+  gap: .5rem !important;
+  margin-bottom: .65rem !important;
+}
+
+.qr-action {
+  min-height: 54px !important;
+  border-radius: 16px !important;
+}
+
+.qr-section-title {
+  margin: .52rem 0 .62rem !important;
+  font-size: 1.08rem !important;
+}
+
+.qr-services {
+  grid-template-columns: repeat(4, 1fr) !important;
+  gap: .45rem !important;
+  margin-bottom: .7rem !important;
+}
+
+.qr-service {
+  min-height: 88px !important;
+  padding: .55rem .3rem .6rem !important;
+  border-radius: 16px !important;
+  text-decoration: none !important;
+  color: inherit !important;
+}
+
+.qr-service-icon {
+  width: 34px !important;
+  height: 34px !important;
+  margin-bottom: .35rem !important;
+}
+
+.qr-service strong {
+  font-size: .68rem !important;
+}
+
+.qr-service span {
+  font-size: .54rem !important;
+  line-height: 1.16 !important;
+}
+
+.qr-feature-panel {
+  flex: none !important;
+  height: auto !important;
+  min-height: auto !important;
+  overflow: visible !important;
+  margin-top: .65rem !important;
+  padding: .65rem !important;
+  border-radius: 24px !important;
+}
+
+.qr-feature-grid {
+  height: auto !important;
+  grid-template-columns: repeat(2, 1fr) !important;
+  grid-auto-rows: 110px !important;
+  gap: .55rem !important;
+}
+
+.qr-feature {
+  height: 110px !important;
+  min-height: 110px !important;
+  padding: .55rem !important;
+  border-radius: 16px !important;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: space-between !important;
+}
+
+.qr-feature-icon {
+  width: 30px !important;
+  height: 30px !important;
+  border-radius: 10px !important;
+  font-size: .76rem !important;
+}
+
+.qr-feature strong {
+  font-size: .68rem !important;
+  line-height: 1.12 !important;
+}
+
+.qr-feature span {
+  display: block !important;
+  font-size: .52rem !important;
+  line-height: 1.18 !important;
+  max-height: 2.4em !important;
+  overflow: hidden !important;
+}
+
+.qr-arrow {
+  width: 22px !important;
+  height: 22px !important;
+  margin-top: .18rem !important;
+}
+
+.qr-footer {
+  padding: .45rem 0 0 !important;
+  height: auto !important;
+  font-size: .66rem !important;
+}
+
+html,
+body {
+  overflow-x: hidden !important;
+}
+
+@media (max-height: 760px) {
+  .qr-hero {
+    min-height: 158px !important;
+    padding-bottom: 3.65rem !important;
+  }
+
+  .qr-mini-qr {
+    top: 2.95rem !important;
+    width: 70px !important;
+  }
+
+  .qr-avatar {
+    width: 70px !important;
+    height: 70px !important;
+  }
+
+  .qr-feature-grid {
+    grid-auto-rows: 98px !important;
+  }
+
+  .qr-feature {
+    height: 98px !important;
+    min-height: 98px !important;
+  }
+}
