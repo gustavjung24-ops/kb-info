@@ -24,6 +24,51 @@
     .cv-primary { background:#102A43; color:#fff; }
     .cv-secondary { background:#fff; color:#102A43; border:1px solid #D9D4C7; }
     @media (min-width:768px){ .cv-grid.two{grid-template-columns:1fr 1fr;} .cv-grid.three{grid-template-columns:repeat(3,1fr);} }
+    .industry-grid {
+      display:grid;
+      grid-template-columns:1fr;
+      gap:1rem;
+      margin-top:1.25rem;
+    }
+    .industry-card {
+      background:#fff;
+      border:1px solid #D9D4C7;
+      border-radius:22px;
+      padding:1.2rem;
+      box-shadow:0 10px 28px rgba(16,42,67,.07);
+    }
+    .industry-head {
+      display:flex;
+      align-items:flex-start;
+      gap:.85rem;
+      margin-bottom:.65rem;
+    }
+    .industry-icon {
+      width:42px;
+      height:42px;
+      border-radius:14px;
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      background:rgba(200,164,107,.14);
+      border:1px solid rgba(200,164,107,.26);
+      font-size:1.15rem;
+      flex:0 0 42px;
+    }
+    .industry-card h3 {
+      margin:0;
+      color:#0B1F33;
+      font-size:1rem;
+    }
+    .industry-card p {
+      margin:.35rem 0 0;
+      color:#667085;
+      line-height:1.65;
+      font-size:.95rem;
+    }
+    @media (min-width:768px){
+      .industry-grid{grid-template-columns:repeat(2,1fr);}
+    }
   </style>
 </head>
 <body class="cv-page">
@@ -62,6 +107,88 @@
             </p>
           </article>
         </div>
+
+        <article class="cv-card" style="margin-top:1.25rem;">
+          <h2>Kinh nghiệm theo nhóm ngành</h2>
+          <p>
+            Nền tảng kinh doanh được hình thành từ nhiều nhóm ngành thực tế, bao gồm B2B kỹ thuật,
+            kênh salon, sản phẩm tiêu dùng, dịch vụ website và các công cụ số hỗ trợ bán hàng.
+            Trọng tâm không nằm ở chức danh, mà ở khả năng hiểu thị trường, tổ chức dữ liệu,
+            tiếp cận khách hàng và biến nhu cầu rời rạc thành quy trình có thể vận hành.
+          </p>
+
+          <div class="industry-grid">
+            <div class="industry-card">
+              <div class="industry-head">
+                <span class="industry-icon">⚙️</span>
+                <h3>Phụ tùng truyền động công nghiệp</h3>
+              </div>
+              <p>
+                Kinh nghiệm với nhóm vòng bi, gối đỡ, dây curoa, xích công nghiệp, nhông xích,
+                phớt và vật tư bảo trì. Tập trung vào khách B2B như nhà máy, xưởng cơ khí,
+                bộ phận kỹ thuật, bảo trì và mua hàng.
+              </p>
+            </div>
+
+            <div class="industry-card">
+              <div class="industry-head">
+                <span class="industry-icon">💇</span>
+                <h3>Mỹ phẩm tóc & kênh Hair Salon</h3>
+              </div>
+              <p>
+                Hiểu mô hình bán hàng cho salon, nhóm sản phẩm chăm sóc tóc, phục hồi, nhuộm,
+                oxy trợ nhuộm, tạo kiểu và combo nhập hàng. Ưu tiên cách tư vấn dễ hiểu,
+                phù hợp nhu cầu thực tế của thợ và chủ salon.
+              </p>
+            </div>
+
+            <div class="industry-card">
+              <div class="industry-head">
+                <span class="industry-icon">🛍️</span>
+                <h3>Sản phẩm tiêu dùng & nội y nữ</h3>
+              </div>
+              <p>
+                Có kinh nghiệm nhìn sản phẩm dưới góc độ thị trường, tệp khách, hình ảnh bán hàng,
+                nội dung giới thiệu và kênh tiếp cận chi phí thấp như Facebook, Zalo, nhóm cộng đồng
+                và nội dung organic.
+              </p>
+            </div>
+
+            <div class="industry-card">
+              <div class="industry-head">
+                <span class="industry-icon">🌐</span>
+                <h3>Website doanh nghiệp nhỏ</h3>
+              </div>
+              <p>
+                Triển khai định hướng website theo ngành: salon, công ty nhỏ, shop, dịch vụ,
+                landing page và trang giới thiệu. Tập trung vào bố cục rõ, nội dung bán hàng,
+                CTA liên hệ và khả năng tự chỉnh sửa cơ bản.
+              </p>
+            </div>
+
+            <div class="industry-card">
+              <div class="industry-head">
+                <span class="industry-icon">💻</span>
+                <h3>Desktop app & dữ liệu khách hàng</h3>
+              </div>
+              <p>
+                Phát triển các ý tưởng công cụ local như làm sạch dữ liệu khách hàng, quản lý hồ sơ,
+                nhập CSV/Excel, phân nhóm khách, hỗ trợ sales, telesales và chăm sóc khách hàng.
+              </p>
+            </div>
+
+            <div class="industry-card">
+              <div class="industry-head">
+                <span class="industry-icon">📊</span>
+                <h3>Quản trị bán hàng thực chiến</h3>
+              </div>
+              <p>
+                Kết hợp phát triển thị trường, quản lý khách hàng, báo giá, theo dõi nhu cầu định kỳ,
+                xây dựng danh mục sản phẩm và chuẩn hóa quy trình tư vấn để đội bán hàng làm việc rõ hơn.
+              </p>
+            </div>
+          </div>
+        </article>
 
         <div class="cv-grid three">
           <article class="cv-card">
