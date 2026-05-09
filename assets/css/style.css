@@ -242,6 +242,20 @@ body {
     display: flex; flex-direction: column;
 }
 
+.domain-card img {
+    width: 100%; height: 100%;
+    object-fit: cover;
+    position: absolute; top: 0; left: 0;
+    z-index: 0;
+}
+
+.domain-card::after {
+    content: "";
+    position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 1; pointer-events: none;
+}
+
 /* Domain Card Subtle CSS Pattern */
 .domain-card::before {
     content: "";
@@ -329,6 +343,20 @@ body {
     display: flex; flex-direction: column; overflow: hidden;
 }
 .proj-visual { height: 140px; width: 100%; position: relative; overflow: hidden; }
+
+.proj-visual img {
+    width: 100%; height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.proj-visual::after {
+    content: "";
+    position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 1; pointer-events: none;
+}
+
 .proj-visual::before {
     content: ""; position: absolute; top: 0; left: 0; width: 100%; height: 100%;
     background-image: 
