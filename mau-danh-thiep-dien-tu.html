@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mẫu danh thiếp điện tử - Khương Bình</title>
+  <meta name="description" content="Một số concept danh thiếp điện tử, QR profile và card giới thiệu cá nhân/doanh nghiệp." />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <style>
+    body { background:#F7F4ED; color:#102A43; }
+    .sample-hero { padding:7rem 0 3rem; }
+    .sample-kicker { color:#C8A46B; font-weight:800; letter-spacing:.12em; text-transform:uppercase; font-size:.8rem; }
+    .sample-title { max-width:820px; font-size:clamp(2.2rem,5vw,4.3rem); line-height:1.05; margin:1rem 0; color:#0B1F33; }
+    .sample-lead { max-width:760px; color:#667085; font-size:1.08rem; line-height:1.8; }
+    .back-link { display:inline-flex; margin-bottom:2rem; text-decoration:none; padding:.75rem 1rem; border-radius:999px; background:#fff; border:1px solid #D9D4C7; color:#102A43; font-weight:800; }
+    .sample-grid { display:grid; grid-template-columns:1fr; gap:1.25rem; }
+    .sample-card { background:#fff; border:1px solid #D9D4C7; border-radius:26px; overflow:hidden; box-shadow:0 14px 34px rgba(16,42,67,.08); }
+    .sample-visual { aspect-ratio:16/10; padding:1.1rem; display:flex; align-items:center; justify-content:center; }
+    .sample-mockup { width:100%; height:100%; border-radius:22px; padding:1rem; display:flex; flex-direction:column; justify-content:space-between; color:#fff; box-shadow:inset 0 0 0 1px rgba(255,255,255,.18); }
+    .mock-top { display:flex; justify-content:space-between; align-items:flex-start; gap:1rem; }
+    .mock-name { font-size:1.1rem; font-weight:900; line-height:1.2; }
+    .mock-role { font-size:.78rem; opacity:.82; margin-top:.25rem; }
+    .mock-qr { width:54px; height:54px; border-radius:12px; background:repeating-linear-gradient(45deg,#fff 0 5px,rgba(255,255,255,.55) 5px 10px); }
+    .mock-line { width:68%; height:9px; border-radius:999px; background:rgba(255,255,255,.45); margin-top:.45rem; }
+    .mock-line.small { width:45%; }
+    .sample-body { padding:1.15rem; }
+    .sample-body h3 { margin:0 0 .45rem; color:#0B1F33; font-size:1.05rem; }
+    .sample-body p { margin:0; color:#667085; line-height:1.65; font-size:.95rem; }
+    .tone-1 { background:linear-gradient(135deg,#102A43,#0B1F33); }
+    .tone-2 { background:linear-gradient(135deg,#0F766E,#064E3B); }
+    .tone-3 { background:linear-gradient(135deg,#171717,#C8A46B); }
+    .tone-4 { background:linear-gradient(135deg,#7C3AED,#DB2777); }
+    .tone-5 { background:linear-gradient(135deg,#92400E,#F59E0B); }
+    .tone-6 { background:linear-gradient(135deg,#1E3A8A,#38BDF8); }
+    .cta-box { margin-top:2rem; background:#0B1F33; color:#fff; border-radius:28px; padding:2rem; display:grid; gap:1rem; }
+    .cta-box p { color:rgba(255,255,255,.78); line-height:1.7; margin:0; }
+    .cta-actions { display:flex; flex-wrap:wrap; gap:.8rem; }
+    .cta-actions a { text-decoration:none; padding:.85rem 1.1rem; border-radius:999px; font-weight:900; }
+    .cta-primary { background:#C8A46B; color:#0B1F33; }
+    .cta-secondary { background:rgba(255,255,255,.1); color:#fff; border:1px solid rgba(255,255,255,.22); }
+    @media (min-width:768px){ .sample-grid{grid-template-columns:repeat(3,1fr);} .cta-box{grid-template-columns:1.4fr .8fr; align-items:center;} }
+  </style>
+</head>
+<body>
+  <main>
+    <section class="sample-hero">
+      <div class="container">
+        <a href="index.html" class="back-link">← Về trang chính</a>
+        <div class="sample-kicker">QR Profile / E-name-card</div>
+        <h1 class="sample-title">Một số concept danh thiếp điện tử đẹp, gọn và dễ ứng dụng</h1>
+        <p class="sample-lead">
+          Đây là bộ card hình minh họa phong cách danh thiếp điện tử. Các mẫu chưa phải demo thật có URL riêng,
+          nhưng có thể dùng làm định hướng thiết kế cho cá nhân, salon, doanh nghiệp nhỏ và mô hình B2B.
+        </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="sample-grid">
+          <article class="sample-card">
+            <div class="sample-visual"><div class="sample-mockup tone-1"><div class="mock-top"><div><div class="mock-name">Business Profile</div><div class="mock-role">Quản trị kinh doanh</div></div><div class="mock-qr"></div></div><div><div class="mock-line"></div><div class="mock-line small"></div></div></div></div>
+            <div class="sample-body"><h3>Doanh nhân / quản lý</h3><p>Phong cách sang, rõ thông tin, phù hợp hồ sơ cá nhân chuyên nghiệp.</p></div>
+          </article>
+
+          <article class="sample-card">
+            <div class="sample-visual"><div class="sample-mockup tone-2"><div class="mock-top"><div><div class="mock-name">Salon Profile</div><div class="mock-role">Đặt lịch & tư vấn</div></div><div class="mock-qr"></div></div><div><div class="mock-line"></div><div class="mock-line small"></div></div></div></div>
+            <div class="sample-body"><h3>Salon / dịch vụ làm đẹp</h3><p>Phù hợp giới thiệu salon, bảng dịch vụ, đặt lịch và liên hệ nhanh.</p></div>
+          </article>
+
+          <article class="sample-card">
+            <div class="sample-visual"><div class="sample-mockup tone-3"><div class="mock-top"><div><div class="mock-name">Premium Card</div><div class="mock-role">Black Gold</div></div><div class="mock-qr"></div></div><div><div class="mock-line"></div><div class="mock-line small"></div></div></div></div>
+            <div class="sample-body"><h3>Cao cấp / thương hiệu cá nhân</h3><p>Tông đen vàng, hợp profile cá nhân, tư vấn, chuyên gia và chủ doanh nghiệp.</p></div>
+          </article>
+
+          <article class="sample-card">
+            <div class="sample-visual"><div class="sample-mockup tone-4"><div class="mock-top"><div><div class="mock-name">Creative Card</div><div class="mock-role">Dịch vụ sáng tạo</div></div><div class="mock-qr"></div></div><div><div class="mock-line"></div><div class="mock-line small"></div></div></div></div>
+            <div class="sample-body"><h3>Sáng tạo / nội dung</h3><p>Phù hợp ngành thiết kế, marketing, media, freelancer hoặc creator.</p></div>
+          </article>
+
+          <article class="sample-card">
+            <div class="sample-visual"><div class="sample-mockup tone-5"><div class="mock-top"><div><div class="mock-name">Sales Card</div><div class="mock-role">Báo giá nhanh</div></div><div class="mock-qr"></div></div><div><div class="mock-line"></div><div class="mock-line small"></div></div></div></div>
+            <div class="sample-body"><h3>Bán hàng / báo giá</h3><p>Gọn cho nhân viên kinh doanh, có QR gửi yêu cầu, báo giá hoặc danh mục sản phẩm.</p></div>
+          </article>
+
+          <article class="sample-card">
+            <div class="sample-visual"><div class="sample-mockup tone-6"><div class="mock-top"><div><div class="mock-name">B2B Profile</div><div class="mock-role">Tra mã sản phẩm</div></div><div class="mock-qr"></div></div><div><div class="mock-line"></div><div class="mock-line small"></div></div></div></div>
+            <div class="sample-body"><h3>B2B / công nghiệp</h3><p>Phù hợp ngành kỹ thuật, phụ tùng, danh mục mã hàng và yêu cầu tư vấn.</p></div>
+          </article>
+        </div>
+
+        <div class="cta-box">
+          <div>
+            <h2>Muốn làm mẫu riêng theo ngành của bạn?</h2>
+            <p>Có thể thiết kế theo màu thương hiệu, lĩnh vực kinh doanh, nút gọi/Zalo, QR liên hệ, QR báo giá và hồ sơ cá nhân.</p>
+          </div>
+          <div class="cta-actions">
+            <a class="cta-primary" href="https://zalo.me/0902964685">Nhắn Zalo</a>
+            <a class="cta-secondary" href="tel:0902964685">Gọi tư vấn</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
