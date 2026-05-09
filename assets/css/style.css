@@ -296,7 +296,7 @@ body {
 /* =========================================
    SECTIONS & GRIDS
    ========================================= */
-.section-title { font-size: 2rem; font-weight: 800; color: var(--color-navy); margin-bottom: 2.5rem; letter-spacing: -0.02em; }
+.section-title { font-size: 2rem; font-weight: 800; color: var(--color-heading); margin-bottom: 2.5rem; letter-spacing: -0.02em; }
 
 .grid-competencies {
     display: grid; grid-template-columns: 1fr; gap: 1.5rem;
@@ -554,6 +554,22 @@ body {
     
     .hero-container { 
         display: grid; 
+        grid-template-columns: minmax(360px, 420px) minmax(0, 1fr); 
+        gap: 4rem; 
+        align-items: center; /* Giúp Profile card thu gọn lại vừa fit nội dung */
+        min-height: calc(100vh - 72px); 
+    }
+    .profile-card { height: fit-content; padding: 2.5rem; border-radius: 32px; }
+    .profile-photo { height: 260px; border-radius: 26px; }
+    
+    .rail-wrapper { margin: 0; }
+    .rail-track { padding-left: 0; padding-right: 0; scroll-padding-left: 0; gap: 1.5rem; }
+    .domain-card { height: 460px; flex: 0 0 280px; }
+    
+    .grid-competencies { grid-template-columns: repeat(3, 1fr); }
+    .cta-wrapper { grid-template-columns: 1fr 1fr; padding: 4rem; }
+}rem; }
+}        display: grid; 
         grid-template-columns: minmax(360px, 420px) minmax(0, 1fr); 
         gap: 4rem; 
         align-items: center; /* Giúp Profile card thu gọn lại vừa fit nội dung */
