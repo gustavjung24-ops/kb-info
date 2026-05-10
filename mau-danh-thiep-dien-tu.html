@@ -364,36 +364,172 @@
           </div>
         </section>
 
-        <div class="sample-grid">
-          <article class="sample-card">
-            <div class="sample-visual"><div class="sample-mockup tone-1"><div class="mock-top"><div><div class="mock-name">Business Profile</div><div class="mock-role">Quản trị kinh doanh</div></div><div class="mock-qr"></div></div><div><div class="mock-line"></div><div class="mock-line small"></div></div></div></div>
-            <div class="sample-body"><h3>Doanh nhân / quản lý</h3><p>Phong cách sang, rõ thông tin, phù hợp hồ sơ cá nhân chuyên nghiệp.</p></div>
-          </article>
+        <style>
+          .e-namecard-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1.25rem;
+            margin: 2rem 0;
+          }
+          .e-namecard-item {
+            background: #fff;
+            border: 1px solid rgba(16,42,67,.1);
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 8px 28px rgba(16,42,67,.08);
+            transition: transform .2s ease, box-shadow .2s ease;
+            text-decoration: none;
+            color: inherit;
+            display: block;
+          }
+          .e-namecard-item:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 14px 42px rgba(16,42,67,.14);
+          }
+          .e-namecard-img-wrap {
+            aspect-ratio: 4/5;
+            overflow: hidden;
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+          }
+          .e-namecard-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform .3s ease;
+          }
+          .e-namecard-item:hover .e-namecard-img {
+            transform: scale(1.03);
+          }
+          .e-namecard-body {
+            padding: .95rem 1rem 1.1rem;
+          }
+          .e-namecard-title {
+            font-size: .95rem;
+            font-weight: 700;
+            color: #0B1F33;
+            margin: 0 0 .35rem;
+            line-height: 1.25;
+          }
+          .e-namecard-desc {
+            font-size: .8rem;
+            color: #667085;
+            line-height: 1.5;
+            margin: 0;
+          }
+          @media (max-width: 1024px) {
+            .e-namecard-grid { grid-template-columns: repeat(3, 1fr); gap: 1rem; }
+          }
+          @media (max-width: 768px) {
+            .e-namecard-grid { grid-template-columns: repeat(2, 1fr); gap: .85rem; }
+            .e-namecard-title { font-size: .9rem; }
+            .e-namecard-desc { font-size: .75rem; }
+          }
+          @media (max-width: 420px) {
+            .e-namecard-grid { gap: .75rem; }
+            .e-namecard-body { padding: .75rem .85rem .9rem; }
+          }
+        </style>
 
-          <article class="sample-card">
-            <div class="sample-visual"><div class="sample-mockup tone-2"><div class="mock-top"><div><div class="mock-name">Salon Profile</div><div class="mock-role">Đặt lịch & tư vấn</div></div><div class="mock-qr"></div></div><div><div class="mock-line"></div><div class="mock-line small"></div></div></div></div>
-            <div class="sample-body"><h3>Salon / dịch vụ làm đẹp</h3><p>Phù hợp giới thiệu salon, bảng dịch vụ, đặt lịch và liên hệ nhanh.</p></div>
-          </article>
+        <div class="e-namecard-grid">
+          <a class="e-namecard-item" href="https://www.thehairlab.top/s/salon-test-mau-01/" target="_blank" rel="noopener">
+            <div class="e-namecard-img-wrap">
+              <img class="e-namecard-img" src="public/image/enamecard-salon-toc.png" alt="Salon tóc" loading="lazy" />
+            </div>
+            <div class="e-namecard-body">
+              <h3 class="e-namecard-title">Salon tóc</h3>
+              <p class="e-namecard-desc">Danh thiếp điện tử hiện đại cho salon tóc, đồng bộ giữa giao diện mobile và card cứng.</p>
+            </div>
+          </a>
 
-          <article class="sample-card">
-            <div class="sample-visual"><div class="sample-mockup tone-3"><div class="mock-top"><div><div class="mock-name">Premium Card</div><div class="mock-role">Black Gold</div></div><div class="mock-qr"></div></div><div><div class="mock-line"></div><div class="mock-line small"></div></div></div></div>
-            <div class="sample-body"><h3>Cao cấp / thương hiệu cá nhân</h3><p>Tông đen vàng, hợp profile cá nhân, tư vấn, chuyên gia và chủ doanh nghiệp.</p></div>
-          </article>
+          <a class="e-namecard-item" href="#" onclick="return false;">
+            <div class="e-namecard-img-wrap">
+              <img class="e-namecard-img" src="public/image/enamecard-spa.png" alt="Spa" loading="lazy" />
+            </div>
+            <div class="e-namecard-body">
+              <h3 class="e-namecard-title">Spa</h3>
+              <p class="e-namecard-desc">Thiết kế mềm mại, thư giãn, phù hợp spa – chăm sóc sắc đẹp – wellness.</p>
+            </div>
+          </a>
 
-          <article class="sample-card">
-            <div class="sample-visual"><div class="sample-mockup tone-4"><div class="mock-top"><div><div class="mock-name">Creative Card</div><div class="mock-role">Dịch vụ sáng tạo</div></div><div class="mock-qr"></div></div><div><div class="mock-line"></div><div class="mock-line small"></div></div></div></div>
-            <div class="sample-body"><h3>Sáng tạo / nội dung</h3><p>Phù hợp ngành thiết kế, marketing, media, freelancer hoặc creator.</p></div>
-          </article>
+          <a class="e-namecard-item" href="https://www.truyendongcongnghiep.top/tra-ma-bao-gia" target="_blank" rel="noopener">
+            <div class="e-namecard-img-wrap">
+              <img class="e-namecard-img" src="public/image/enamecard-cong-nghiep.png" alt="Công nghiệp" loading="lazy" />
+            </div>
+            <div class="e-namecard-body">
+              <h3 class="e-namecard-title">Công nghiệp</h3>
+              <p class="e-namecard-desc">Mẫu chuyên nghiệp cho doanh nghiệp công nghiệp, truyền động, kỹ thuật và B2B.</p>
+            </div>
+          </a>
 
-          <article class="sample-card">
-            <div class="sample-visual"><div class="sample-mockup tone-5"><div class="mock-top"><div><div class="mock-name">Sales Card</div><div class="mock-role">Báo giá nhanh</div></div><div class="mock-qr"></div></div><div><div class="mock-line"></div><div class="mock-line small"></div></div></div></div>
-            <div class="sample-body"><h3>Bán hàng / báo giá</h3><p>Gọn cho nhân viên kinh doanh, có QR gửi yêu cầu, báo giá hoặc danh mục sản phẩm.</p></div>
-          </article>
+          <a class="e-namecard-item" href="#" onclick="return false;">
+            <div class="e-namecard-img-wrap">
+              <img class="e-namecard-img" src="public/image/enamecard-dich-vu-bao-ve.png" alt="Dịch vụ bảo vệ" loading="lazy" />
+            </div>
+            <div class="e-namecard-body">
+              <h3 class="e-namecard-title">Dịch vụ bảo vệ</h3>
+              <p class="e-namecard-desc">Phong cách mạnh mẽ, tin cậy, phù hợp doanh nghiệp bảo vệ và an ninh.</p>
+            </div>
+          </a>
 
-          <article class="sample-card">
-            <div class="sample-visual"><div class="sample-mockup tone-6"><div class="mock-top"><div><div class="mock-name">B2B Profile</div><div class="mock-role">Tra mã sản phẩm</div></div><div class="mock-qr"></div></div><div><div class="mock-line"></div><div class="mock-line small"></div></div></div></div>
-            <div class="sample-body"><h3>B2B / công nghiệp</h3><p>Phù hợp ngành kỹ thuật, phụ tùng, danh mục mã hàng và yêu cầu tư vấn.</p></div>
-          </article>
+          <a class="e-namecard-item" href="https://www.ungdungthongminh.shop/thiet-ke-web" target="_blank" rel="noopener">
+            <div class="e-namecard-img-wrap">
+              <img class="e-namecard-img" src="public/image/enamecard-shop.png" alt="Shop" loading="lazy" />
+            </div>
+            <div class="e-namecard-body">
+              <h3 class="e-namecard-title">Shop</h3>
+              <p class="e-namecard-desc">Mẫu trẻ trung cho shop thời trang, mỹ phẩm, phụ kiện và bán lẻ.</p>
+            </div>
+          </a>
+
+          <a class="e-namecard-item" href="#" onclick="return false;">
+            <div class="e-namecard-img-wrap">
+              <img class="e-namecard-img" src="public/image/enamecard-bat-dong-san.png" alt="Bất động sản" loading="lazy" />
+            </div>
+            <div class="e-namecard-body">
+              <h3 class="e-namecard-title">Bất động sản</h3>
+              <p class="e-namecard-desc">Mẫu sang trọng cho môi giới, tư vấn bất động sản và dự án nhà ở.</p>
+            </div>
+          </a>
+
+          <a class="e-namecard-item" href="#" onclick="return false;">
+            <div class="e-namecard-img-wrap">
+              <img class="e-namecard-img" src="public/image/enamecard-nha-hang-cafe.png" alt="Nhà hàng / Cafe" loading="lazy" />
+            </div>
+            <div class="e-namecard-body">
+              <h3 class="e-namecard-title">Nhà hàng / Cafe</h3>
+              <p class="e-namecard-desc">Danh thiếp điện tử ấm áp, gần gũi, phù hợp quán ăn, nhà hàng và cafe.</p>
+            </div>
+          </a>
+
+          <a class="e-namecard-item" href="#" onclick="return false;">
+            <div class="e-namecard-img-wrap">
+              <img class="e-namecard-img" src="public/image/enamecard-nha-khoa.png" alt="Nha khoa" loading="lazy" />
+            </div>
+            <div class="e-namecard-body">
+              <h3 class="e-namecard-title">Nha khoa</h3>
+              <p class="e-namecard-desc">Thiết kế sạch sẽ, chuyên nghiệp cho phòng khám nha khoa và dịch vụ chăm sóc răng.</p>
+            </div>
+          </a>
+
+          <a class="e-namecard-item" href="#" onclick="return false;">
+            <div class="e-namecard-img-wrap">
+              <img class="e-namecard-img" src="public/image/enamecard-trung-tam-dao-tao.png" alt="Trung tâm đào tạo" loading="lazy" />
+            </div>
+            <div class="e-namecard-body">
+              <h3 class="e-namecard-title">Trung tâm đào tạo</h3>
+              <p class="e-namecard-desc">Phù hợp trung tâm giáo dục, kỹ năng, ngoại ngữ và đào tạo nghề.</p>
+            </div>
+          </a>
+
+          <a class="e-namecard-item" href="#" onclick="return false;">
+            <div class="e-namecard-img-wrap">
+              <img class="e-namecard-img" src="public/image/enamecard-garage-o-to.png" alt="Garage ô tô" loading="lazy" />
+            </div>
+            <div class="e-namecard-body">
+              <h3 class="e-namecard-title">Garage ô tô</h3>
+              <p class="e-namecard-desc">Phong cách mạnh, hiện đại cho garage, chăm sóc xe và dịch vụ ô tô.</p>
+            </div>
+          </a>
         </div>
 
         <div class="cta-box">
