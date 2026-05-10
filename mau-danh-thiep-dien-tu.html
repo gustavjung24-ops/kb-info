@@ -415,18 +415,29 @@
             color: #667085;
             line-height: 1.5;
             margin: 0;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
           }
           @media (max-width: 1024px) {
             .e-namecard-grid { grid-template-columns: repeat(3, 1fr); gap: 1rem; }
+            .e-namecard-img-wrap { max-height: 320px; }
           }
           @media (max-width: 768px) {
             .e-namecard-grid { grid-template-columns: repeat(2, 1fr); gap: .85rem; }
             .e-namecard-title { font-size: .9rem; }
             .e-namecard-desc { font-size: .75rem; }
+            .e-namecard-img-wrap { max-height: 280px; }
           }
           @media (max-width: 420px) {
             .e-namecard-grid { gap: .75rem; }
             .e-namecard-body { padding: .75rem .85rem .9rem; }
+            .e-namecard-img-wrap { max-height: 240px; }
+          }
+          @media (min-width: 1025px) {
+            .e-namecard-img-wrap { max-height: 360px; }
           }
         </style>
 
