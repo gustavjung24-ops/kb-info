@@ -1382,6 +1382,27 @@ body {
   line-height: 1.12 !important;
 }
 
+.contact-save-toast {
+  position: fixed;
+  left: 50%;
+  bottom: calc(12px + env(safe-area-inset-bottom));
+  z-index: 9999;
+  width: min(92vw, 360px);
+  transform: translateX(-50%);
+  padding: 9px 12px;
+  border-radius: 999px;
+  background: rgba(15, 23, 42, 0.94);
+  color: #fff;
+  font-size: 12px;
+  line-height: 1.35;
+  text-align: center;
+  box-shadow: 0 14px 30px rgba(15, 23, 42, 0.28);
+}
+
+.contact-save-toast[hidden] {
+  display: none;
+}
+
 .qr-feature span {
   font-size: .58rem !important;
   line-height: 1.18 !important;
@@ -1634,43 +1655,4 @@ body {
   .qr-mini-qr {
     top: 2.6rem !important;
   }
-}
-
-.ios-zalo-note {
-  margin: 10px auto 0;
-  padding: 10px 12px;
-  border: 1px solid rgba(245, 158, 11, 0.35);
-  border-radius: 14px;
-  background: rgba(255, 251, 235, 0.96);
-  color: #78350f;
-  font-size: 12px;
-  line-height: 1.45;
-  max-width: 360px;
-  box-shadow: 0 10px 24px rgba(120, 53, 15, 0.08);
-}
-
-.ios-zalo-note strong {
-  display: block;
-  margin-bottom: 4px;
-  font-size: 13px;
-}
-
-.ios-zalo-note span {
-  display: block;
-}
-
-.copy-safari-link {
-  margin-top: 8px;
-  width: 100%;
-  border: 0;
-  border-radius: 999px;
-  padding: 8px 10px;
-  background: #0f766e;
-  color: #fff;
-  font-weight: 700;
-  cursor: pointer;
-}
-
-.copy-safari-link:active {
-  transform: translateY(1px);
 }
