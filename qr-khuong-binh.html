@@ -67,6 +67,14 @@
         </a>
       </div>
 
+      <div class="ios-zalo-note" id="iosZaloNote" hidden>
+        <strong>iPhone đang mở trong Zalo</strong>
+        <span>Nếu bấm "Lưu contact" chỉ xoay mà chưa hiện lưu danh bạ, hãy bấm ⋯ hoặc Chia sẻ trong Zalo → Mở bằng Safari, rồi bấm lại "Lưu contact".</span>
+        <button type="button" class="copy-safari-link" id="copySafariLink">
+          Sao chép link mở Safari
+        </button>
+      </div>
+
       <h2 class="qr-section-title">Dịch vụ / lĩnh vực</h2>
 
       <div class="qr-services">
@@ -140,5 +148,34 @@
       </section>
     </section>
   </main>
+
+  <script>
+    (function () {
+      var ua = navigator.userAgent || "";
+      var isIOS = /iPhone|iPad|iPod/i.test(ua);
+      var isZalo = /Zalo/i.test(ua);
+      var note = document.getElementById("iosZaloNote");
+      var copyBtn = document.getElementById("copySafariLink");
+
+      if (isIOS && isZalo && note) {
+        note.hidden = false;
+      }
+
+      if (copyBtn) {
+        copyBtn.addEventListener("click", function () {
+          var url = window.location.origin + window.location.pathname;
+          if (navigator.clipboard && navigator.clipboard.writeText) {
+            navigator.clipboard.writeText(url).then(function () {
+              copyBtn.textContent = "Đã sao chép link";
+            }).catch(function () {
+              copyBtn.textContent = "Không sao chép được";
+            });
+          } else {
+            copyBtn.textContent = "Hãy copy link trên thanh địa chỉ";
+          }
+        });
+      }
+    })();
+  </script>
 </body>
 </html>
