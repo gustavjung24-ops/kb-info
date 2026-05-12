@@ -734,3 +734,11 @@ body {
         font-size: 0.95rem;
     }
 }
+/* Added for Website button */
+.btn-website,
+a[href="./he-sinh-thai-website.html"]{
+  background: linear-gradient(135deg, #f7c46c, #38bdf8);
+  color: #07111f !important;
+  font-weight: 900;
+  border: 0;
+}
