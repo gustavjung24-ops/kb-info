@@ -1,369 +1,298 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="vi">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Khương Bình - Smart Business Profile</title>
-    <link rel="stylesheet" href="assets/css/style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#071a2b">
+  <meta name="description" content="Khương Bình trực tiếp vận hành F&B và phát triển giải pháp số cho quán đồ uống, nhà phân phối và doanh nghiệp nhỏ.">
+  <title>Khương Bình — F&B & Giải pháp số thực chiến</title>
+  <link rel="stylesheet" href="assets/css/home-v2.css">
 </head>
 <body>
+  <a class="skip-link" href="#main-content">Bỏ qua điều hướng</a>
 
-    <!-- 1. TOP NAVIGATION -->
-    <nav class="top-nav">
-        <div class="nav-container">
-            <a href="#" class="nav-brand">KHƯƠNG BÌNH</a>
-            <div class="nav-links desktop-only">
-                <a href="#hero">Hồ sơ</a>
-                <a href="#domains">Lĩnh vực</a>
-                <a href="#competencies">Năng lực</a>
-                <a href="#projects">Dự án</a>
-                <a href="#contact">Liên hệ</a>
-            </div>
-            <div style="display: flex; align-items: center; gap: 0.5rem;">
-                <button id="search-trigger" class="btn btn-text" aria-label="Tìm nhanh" style="padding: 0.5rem; border-radius: 50%;">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
-                </button>
-                <a href="tel:0902964685" class="btn btn-primary btn-small">Gọi ngay</a>
-            </div>
-        </div>
-    </nav>
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="Khương Bình — Trang chủ">
+        <span class="brand-mark">KB</span>
+        <span class="brand-copy">
+          <strong>KHƯƠNG BÌNH</strong>
+          <small>F&B & Digital Operations</small>
+        </span>
+      </a>
 
-    <!-- 2. HERO SPLIT EDITORIAL -->
-    <section id="hero" class="section-hero">
-        <div class="hero-container">
-            
-            <!-- Cột trái: Profile Card -->
-            <div class="hero-left">
-                <div class="profile-card">
-                    <div class="profile-visual">
-                        <img src="avatar.jpg" alt="Khương Bình" class="profile-photo">
-                    </div>
-                    <div class="eyebrow">SMART BUSINESS PROFILE</div>
-                    <h1 class="hero-h1">KHƯƠNG BÌNH</h1>
-                    <h2 class="hero-subtitle">Quản trị kinh doanh & giải pháp số thực chiến</h2>
-                    <div class="trust-line">20+ năm kinh nghiệm bán hàng, phát triển thị trường & quản trị kinh doanh</div>
-                    <p class="hero-desc">Tôi kết hợp kinh nghiệm phát triển thị trường, quản lý kinh doanh và công cụ số để hỗ trợ bán hàng, phân phối và vận hành hiệu quả hơn.</p>
-                    
-                    <div class="hero-tags-line">
-                        Phát triển thị trường • Phân phối • Website • QR • App • AI
-                    </div>
-                    
-                    <div class="profile-actions">
-                        <a href="tel:0902964685" class="btn btn-primary btn-full">Gọi ngay</a>
-                        <div class="action-row">
-                            <a href="https://zalo.me/0902964685" target="_blank" rel="noopener noreferrer" class="btn btn-outline">Nhắn Zalo</a>
-                            <a href="assets/files/khuong-binh.vcf" download class="btn btn-outline">Lưu danh bạ</a>
-                            <a class="btn btn-outline btn-website" href="https://khuongbinh24-info.vercel.app/he-sinh-thai-website.html">Website</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav">
+        <span></span><span></span><span></span>
+        <span class="sr-only">Mở menu</span>
+      </button>
 
-            <!-- Cột phải: Lĩnh vực Image Rail -->
-            <div class="hero-right" id="domains">
-                <div class="rail-header">
-                    <div>
-                        <h3 class="rail-title">Hệ sinh thái lĩnh vực</h3>
-                        <p class="rail-desc">Từ quản trị kinh doanh thực chiến đến các kênh phân phối và công cụ số hỗ trợ bán hàng.</p>
-                    </div>
-                    <div class="rail-controls desktop-only">
-                        <button class="rail-nav-btn prev-btn" aria-label="Previous">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg>
-                        </button>
-                        <button class="rail-nav-btn next-btn" aria-label="Next">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
-                        </button>
-                    </div>
-                </div>
+      <nav class="main-nav" id="main-nav" aria-label="Điều hướng chính">
+        <a href="#fnb">F&B</a>
+        <a href="#solutions">Giải pháp số</a>
+        <a href="#process">Cách triển khai</a>
+        <a href="#experience">Kinh nghiệm</a>
+        <a href="#contact">Liên hệ</a>
+      </nav>
 
-                <div class="rail-wrapper" id="domain-rail">
-                    <div class="rail-track">
-                        <!-- Card 01 -->
-                        <div class="domain-card">
-                            <img src="assets/images/cards/ecosystem-quan-tri-kinh-doanh.png" alt="Quản trị kinh doanh" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: 0;">
-                            <div class="card-num">01</div>
-                            <div class="domain-content">
-                                <span class="badge">Nền tảng chính</span>
-                                <h4>Quản trị kinh doanh</h4>
-                                <p>Phát triển thị trường, quản lý sales, xây dựng hệ thống khách hàng và quy trình kinh doanh.</p>
-                                <a href="ho-so-quan-tri-kinh-doanh.html" aria-label="Xem thêm về Quản trị kinh doanh" class="card-link">Xem thêm 
-                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-                                </a>
-                            </div>
-                        </div>
-                        <!-- Card 02 -->
-                        <div class="domain-card">
-                            <img src="assets/images/cards/ecosystem-ung-dung-thong-minh.png" alt="Ứng Dụng Thông Minh" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: 0;">
-                            <div class="card-num">02</div>
-                            <div class="domain-content">
-                                <span class="badge">Giải pháp số</span>
-                                <h4>Ứng Dụng Thông Minh</h4>
-                                <p>Website, QR bán hàng, app quản lý và công cụ AI marketing.</p>
-                                <a href="https://khuongbinh24-info.vercel.app/he-sinh-thai-website.html" class="card-link">Xem thêm 
-                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-                                </a>
-                            </div>
-                        </div>
-                        <!-- Card 03 -->
-                        <div class="domain-card">
-                            <img src="assets/images/cards/ecosystem-the-hair-lab.png" alt="The Hair Lab" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: 0;">
-                            <div class="card-num">03</div>
-                            <div class="domain-content">
-                                <span class="badge">Mỹ phẩm tóc</span>
-                                <h4>The Hair Lab</h4>
-                                <p>Mỹ phẩm tóc chuyên nghiệp, hỗ trợ salon, nội dung và công cụ bán hàng ngành tóc.</p>
-                                <a href="https://www.thehairlab.top/" class="card-link">Xem thêm 
-                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-                                </a>
-                            </div>
-                        </div>
-                        <!-- Card 04 -->
-                        <div class="domain-card">
-                            <img src="assets/images/cards/ecosystem-truyen-dong-cong-nghiep.png" alt="Truyền Động CN" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: 0;">
-                            <div class="card-num">04</div>
-                            <div class="domain-content">
-                                <span class="badge">B2B công nghiệp</span>
-                                <h4>Truyền Động CN</h4>
-                                <p>Phụ tùng truyền động, tra mã, báo giá và kết nối khách hàng B2B.</p>
-                                <a href="https://www.truyendongcongnghiep.top/tra-ma-bao-gia" class="card-link">Xem thêm &rarr;</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- 3. NĂNG LỰC LÕI -->
-    <section id="competencies" class="section bg-alt">
-        <div class="container">
-            <h2 class="section-title text-center">Năng lực lõi</h2>
-            <div class="grid-competencies">
-                <div class="comp-card">
-                    <div class="competency-head">
-                        <span class="competency-icon">📊</span>
-                        <h3>Quản trị kinh doanh</h3>
-                    </div>
-                    <p>Tối ưu quy trình và nâng cao hiệu quả vận hành doanh nghiệp.</p>
-                    <span class="comp-num">01</span>
-                </div>
-                <div class="comp-card">
-                    <div class="competency-head">
-                        <span class="competency-icon">📈</span>
-                        <h3>Phát triển thị trường</h3>
-                    </div>
-                    <p>Nghiên cứu, lập kế hoạch và mở rộng tệp khách hàng tiềm năng.</p>
-                    <span class="comp-num">02</span>
-                </div>
-                <div class="comp-card">
-                    <div class="competency-head">
-                        <span class="competency-icon">🧩</span>
-                        <h3>Xây dựng HT phân phối</h3>
-                    </div>
-                    <p>Thiết lập và quản lý các kênh phân phối, đại lý bán hàng.</p>
-                    <span class="comp-num">03</span>
-                </div>
-                <div class="comp-card">
-                    <div class="competency-head">
-                        <span class="competency-icon">🎯</span>
-                        <h3>Đào tạo đội sales</h3>
-                    </div>
-                    <p>Nâng cao kỹ năng tư vấn, chốt sale và chăm sóc khách hàng.</p>
-                    <span class="comp-num">04</span>
-                </div>
-                <div class="comp-card">
-                    <div class="competency-head">
-                        <span class="competency-icon">💻</span>
-                        <h3>Công cụ số bán hàng</h3>
-                    </div>
-                    <p>Ứng dụng công nghệ vào việc bán lẻ và quản lý thông tin khách hàng.</p>
-                    <span class="comp-num">05</span>
-                </div>
-                <div class="comp-card">
-                    <div class="competency-head">
-                        <span class="competency-icon">✨</span>
-                        <h3>AI Marketing thực dụng</h3>
-                    </div>
-                    <p>Tích hợp AI để sáng tạo nội dung và tự động hóa quy trình marketing.</p>
-                    <span class="comp-num">06</span>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- 4. DỰ ÁN NỔI BẬT (RAIL NHỎ) -->
-    <section id="projects" class="section">
-        <div class="container">
-            <div class="rail-header">
-                <h2 class="section-title mb-0">Dự án & Công cụ</h2>
-                <div class="rail-controls desktop-only" id="proj-controls">
-                    <button class="rail-nav-btn prev-btn"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg></button>
-                    <button class="rail-nav-btn next-btn"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg></button>
-                </div>
-            </div>
-            <div class="rail-wrapper mt-4">
-                <div class="rail-track">
-                    <div class="project-card">
-                        <div class="proj-visual">
-                            <img src="assets/images/cards/project-web-salon-toc.png" alt="Web salon tóc">
-                            <span class="proj-badge">Web</span>
-                        </div>
-                        <div class="proj-content">
-                            <h5>Web salon tóc</h5>
-                            <p>Hệ thống giới thiệu salon và mỹ phẩm tóc chuyên nghiệp.</p>
-                            <a href="https://www.thehairlab.top/" aria-label="Xem mẫu Web salon tóc" class="btn btn-outline btn-small">Xem mẫu</a>
-                        </div>
-                    </div>
-                    <div class="project-card">
-                        <div class="proj-visual">
-                            <img src="assets/images/cards/project-web-doanh-nghiep-nho.png" alt="Web doanh nghiệp nhỏ">
-                            <span class="proj-badge">AI</span>
-                        </div>
-                        <div class="proj-content">
-                            <h5>Web doanh nghiệp nhỏ</h5>
-                            <p>Giải pháp website tiết kiệm, chuẩn SEO cho SME.</p>
-                            <a href="https://www.ungdungthongminh.shop/mau-demo/company" aria-label="Xem mẫu Web doanh nghiệp nhỏ" class="btn btn-outline btn-small">Xem mẫu</a>
-                        </div>
-                    </div>
-                    <div class="project-card">
-                        <div class="proj-visual">
-                            <img src="assets/images/cards/project-qr-dat-lich.png" alt="QR đặt lịch">
-                            <span class="proj-badge">QR</span>
-                        </div>
-                        <div class="proj-content">
-                            <h5>QR đặt lịch</h5>
-                            <p>Hệ thống quét QR đặt lịch dịch vụ nhanh chóng.</p>
-                            <a href="https://www.thehairlab.top/" aria-label="Xem mẫu QR đặt lịch" class="btn btn-outline btn-small">Xem mẫu</a>
-                        </div>
-                    </div>
-                    <div class="project-card">
-                        <div class="proj-visual">
-                            <img src="assets/images/cards/project-qr-bao-gia.png" alt="QR báo giá">
-                            <span class="proj-badge">Data</span>
-                        </div>
-                        <div class="proj-content">
-                            <h5>QR báo giá</h5>
-                            <p>Tạo và xuất báo giá sản phẩm ngay trên điện thoại.</p>
-                            <a href="mau-danh-thiep-dien-tu.html" aria-label="Xem mẫu QR báo giá" class="btn btn-outline btn-small">Xem mẫu</a>
-                        </div>
-                    </div>
-                    <div class="project-card">
-                        <div class="proj-visual">
-                            <img src="assets/images/cards/project-app-desktop-quan-ly.png" alt="App desktop quản lý">
-                            <span class="proj-badge">App</span>
-                        </div>
-                        <div class="proj-content">
-                            <h5>App desktop quản lý</h5>
-                            <p>Phần mềm quản lý bán hàng và tồn kho nội bộ.</p>
-                            <a href="https://www.ungdungthongminh.shop/phan-mem" aria-label="Xem mẫu App desktop quản lý" class="btn btn-outline btn-small">Xem mẫu</a>
-                        </div>
-                    </div>
-                    <div class="project-card">
-                        <div class="proj-visual">
-                            <img src="assets/images/cards/project-tra-ma-san-pham-b2b.png" alt="Tra mã sản phẩm B2B">
-                            <span class="proj-badge">B2B</span>
-                        </div>
-                        <div class="proj-content">
-                            <h5>Tra mã sản phẩm B2B</h5>
-                            <p>Hệ thống tra cứu chéo mã phụ tùng công nghiệp.</p>
-                            <a href="https://www.truyendongcongnghiep.top/tra-ma-bao-gia" aria-label="Xem mẫu Tra mã sản phẩm B2B" class="btn btn-outline btn-small">Xem mẫu</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- 5. CTA FORM GỬI NHU CẦU -->
-    <section id="contact" class="section section-cta">
-        <div class="container">
-            <div class="cta-wrapper">
-                <div class="cta-info">
-                    <h2>Sẵn sàng hợp tác?</h2>
-                    <p>Phản hồi nhanh cho nhu cầu website, QR bán hàng, app quản lý, mỹ phẩm tóc và B2B công nghiệp.</p>
-                    <ul class="contact-list">
-                        <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg> <a href="tel:0902964685" style="color: inherit; text-decoration: none;">0902 964 685</a></li>
-                        <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg> <a href="https://zalo.me/0902964685" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: none;">Zalo: 0902 964 685</a></li>
-                        <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/><path d="M2 12h20"/></svg> <a href="https://ungdungthongminh.shop" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: none;">ungdungthongminh.shop</a></li>
-                    </ul>
-                </div>
-                <div class="cta-form-box">
-                    <form id="contactForm">
-                        <div class="form-group">
-                            <label>Họ và tên</label>
-                            <input type="text" id="name" required placeholder="Nhập tên của bạn">
-                        </div>
-                        <div class="form-group">
-                            <label>Dịch vụ quan tâm</label>
-                            <select id="service" required>
-                                <option value="" disabled selected>Chọn lĩnh vực...</option>
-                                <option value="Quản trị kinh doanh">Quản trị kinh doanh</option>
-                                <option value="Giải pháp số">Giải pháp số</option>
-                                <option value="Khác">Khác</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <label>Ghi chú thêm</label>
-                            <textarea rows="3" placeholder="Chia sẻ thêm về nhu cầu..."></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary btn-full">Gửi yêu cầu</button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <footer class="footer">
-        <div class="container text-center">
-            <div class="footer-name">KHƯƠNG BÌNH</div>
-            <div class="footer-links">
-                <a href="https://ungdungthongminh.shop" target="_blank" rel="noopener noreferrer">ungdungthongminh.shop</a>
-                <a href="https://thehairlab.top" target="_blank" rel="noopener noreferrer">thehairlab.top</a>
-                <a href="https://truyendongcongnghiep.top" target="_blank" rel="noopener noreferrer">truyendongcongnghiep.top</a>
-            </div>
-            <div class="copyright">© 2026 Khương Bình. Hồ sơ kinh doanh điện tử.</div>
-        </div>
-    </footer>
-
-    <!-- 6. MOBILE ACTION BAR -->
-    <div class="mobile-action-bar mobile-only">
-        <a href="tel:0902964685" class="action-item">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-            <span>Gọi ngay</span>
-        </a>
-        <a href="https://zalo.me/0902964685" target="_blank" rel="noopener noreferrer" class="action-item">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
-            <span>Zalo</span>
-        </a>
-        <a href="assets/files/khuong-binh.vcf" download class="action-item">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"/><polyline points="17 21 17 13 7 13 7 21"/><polyline points="7 3 7 8 15 8"/></svg>
-            <span>Lưu DB</span>
-        </a>
-        <a href="#contact" class="action-item">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
-            <span>Nhu cầu</span>
-        </a>
+      <a class="header-cta" href="tel:0902964685">Gọi trao đổi</a>
     </div>
+  </header>
 
-    <!-- 7. SEARCH MODAL -->
-    <div id="search-modal" class="search-modal" aria-hidden="true">
-        <div class="search-modal-overlay" id="search-overlay"></div>
-        <div class="search-modal-container">
-            <div class="search-header">
-                <svg class="search-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
-                <input type="text" id="search-input" placeholder="Tìm kiếm liên hệ, lĩnh vực, dự án..." autocomplete="off">
-                <button class="search-close" id="search-close" aria-label="Đóng">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6L6 18M6 6l12 12"/></svg>
-                </button>
-            </div>
-            <div class="search-results" id="search-results"></div>
-            <div class="search-empty" id="search-empty" style="display: none;">
-                <p>Không tìm thấy kết quả phù hợp.</p>
-                <p style="margin-top: 0.5rem;">Bạn có thể <a href="https://zalo.me/0902964685" target="_blank" rel="noopener noreferrer">nhắn Zalo</a> để hỏi trực tiếp.</p>
-            </div>
+  <main id="main-content">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <div class="eyebrow">Đang trực tiếp vận hành F&B</div>
+          <h1>Vận hành F&B và xây giải pháp số từ bài toán thực tế.</h1>
+          <p class="hero-lead">
+            Tôi trực tiếp phát triển hoạt động F&B, đồng thời xây QR Menu, đặt món,
+            khách hàng thân thiết, MVP quản lý nhà phân phối và Facebook Automation
+            để việc bán hàng gọn hơn, dữ liệu rõ hơn và khách quay lại nhiều hơn.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#fnb">Xem hoạt động F&B</a>
+            <a class="btn btn-secondary" href="#solutions">Xem giải pháp số</a>
+            <a class="btn btn-ghost" href="https://zalo.me/0902964685" target="_blank" rel="noopener noreferrer">Nhắn Zalo</a>
+          </div>
+          <div class="hero-tags" aria-label="Các hướng đang phát triển">
+            <span>F&B đang vận hành</span>
+            <span>MilkTea QR</span>
+            <span>MCP-Plan</span>
+            <span>Facebook Automation</span>
+          </div>
         </div>
-    </div>
 
-    <script src="assets/js/main.js"></script>
+        <div class="hero-visual reveal" aria-label="Hệ sinh thái vận hành">
+          <div class="profile-stage">
+            <article class="portrait-card">
+              <img src="avatar.jpg" alt="Khương Bình">
+              <div class="portrait-copy">
+                <span>Operator / Builder</span>
+                <strong>Khương Bình</strong>
+                <small>Kinh doanh thực tế trước, công nghệ theo sau để giải đúng việc.</small>
+              </div>
+            </article>
+
+            <article class="orbit-card orbit-fnb">
+              <span class="orbit-icon">F&amp;B</span>
+              <div><span>Hoạt động chính</span><strong>F&B & Đồ uống</strong></div>
+            </article>
+
+            <article class="orbit-card orbit-qr">
+              <span class="orbit-icon">QR</span>
+              <div><span>Sản phẩm số</span><strong>MilkTea QR</strong></div>
+            </article>
+
+            <article class="orbit-card orbit-mcp">
+              <span class="orbit-icon">MVP</span>
+              <div><span>Vận hành NPP</span><strong>MCP-Plan</strong></div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-fnb" id="fnb">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div>
+            <p class="section-kicker">Hoạt động đang vận hành</p>
+            <h2>F&B là trung tâm, công nghệ phục vụ trực tiếp cho điểm bán.</h2>
+          </div>
+          <p>
+            Không làm công nghệ để trình diễn. Mỗi tính năng được phát triển từ việc thật:
+            khách xem món, đặt hàng, tìm đường, lưu quán, quay lại mua và được chăm sóc tốt hơn.
+          </p>
+        </div>
+
+        <article class="fnb-feature reveal">
+          <div class="fnb-copy">
+            <div class="status-pill">Đang trực tiếp vận hành</div>
+            <h3>F&B & Đồ uống</h3>
+            <p>
+              Phát triển sản phẩm, menu, điểm bán và quy trình phục vụ; đồng thời số hóa
+              hành trình khách hàng từ lúc quét QR đến khi đặt món, lưu thông tin quán và quay lại.
+            </p>
+            <ul class="check-list">
+              <li>Menu và sản phẩm được thử nghiệm từ nhu cầu thực tế</li>
+              <li>Quy trình bán hàng gọn cho quán nhỏ và điểm bán linh hoạt</li>
+              <li>QR Menu, giỏ hàng, vị trí giao hàng và luồng gửi đơn qua Zalo</li>
+              <li>Lộ trình thành viên, tích điểm, voucher và chăm sóc khách quay lại</li>
+            </ul>
+            <div class="feature-actions">
+              <a class="btn btn-light" href="https://qr.bepsi.click/chill" target="_blank" rel="noopener noreferrer">Xem menu đang chạy</a>
+              <a class="text-link" href="#solutions">Xem hệ thống phía sau <span>→</span></a>
+            </div>
+          </div>
+
+          <div class="fnb-dashboard" aria-label="Luồng số hóa F&B">
+            <div class="dashboard-top">
+              <div>
+                <span>F&B DIGITAL FLOW</span>
+                <strong>Từ ly nước đến dữ liệu khách hàng</strong>
+              </div>
+              <div class="live-dot">LIVE</div>
+            </div>
+            <div class="metric-grid">
+              <div class="metric-card"><span>01</span><strong>QR Menu</strong><small>Khách mở nhanh trên điện thoại</small></div>
+              <div class="metric-card"><span>02</span><strong>Đặt món</strong><small>Chọn món, tùy chọn và giỏ hàng</small></div>
+              <div class="metric-card"><span>03</span><strong>Khách hàng</strong><small>Lưu lịch sử và hành vi mua</small></div>
+              <div class="metric-card"><span>04</span><strong>Tích điểm</strong><small>Thành viên, voucher, quay lại</small></div>
+            </div>
+            <div class="flow-line"><span>Quét QR</span><b>→</b><span>Chọn món</span><b>→</b><span>Đặt hàng</span><b>→</b><span>Chăm sóc lại</span></div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section section-solutions" id="solutions">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div>
+            <p class="section-kicker">Giải pháp số đang phát triển</p>
+            <h2>Ba sản phẩm, cùng một nguyên tắc: giải đúng bài toán đang vận hành.</h2>
+          </div>
+          <p>
+            Bắt đầu từ MVP vừa đủ dùng, đưa vào thực tế, lấy dữ liệu rồi mới mở rộng.
+            Không bắt doanh nghiệp thay toàn bộ cách làm ngay từ ngày đầu.
+          </p>
+        </div>
+
+        <div class="solution-grid">
+          <article class="solution-card solution-featured reveal">
+            <div class="card-head"><span class="solution-badge">Đang vận hành & phát triển</span><span class="card-index">01</span></div>
+            <div class="solution-icon">QR</div>
+            <h3>MilkTea QR</h3>
+            <p>Nền tảng cho quán đồ uống: menu QR, đặt món, cài lên điện thoại, lưu quán và phát triển thành hệ thống khách hàng thân thiết.</p>
+            <ul>
+              <li>Multi-shop và giao diện riêng theo thương hiệu</li>
+              <li>Sản phẩm, lựa chọn, giỏ hàng và vị trí giao hàng</li>
+              <li>Roadmap order thật, tích điểm, voucher và báo cáo</li>
+            </ul>
+            <a class="card-link" href="https://qr.bepsi.click/chill" target="_blank" rel="noopener noreferrer">Mở sản phẩm mẫu <span>↗</span></a>
+          </article>
+
+          <article class="solution-card reveal">
+            <div class="card-head"><span class="solution-badge">MVP cho NPP</span><span class="card-index">02</span></div>
+            <div class="solution-icon">MCP</div>
+            <h3>MCP-Plan</h3>
+            <p>MVP quản lý vận hành cho nhà phân phối, được xây từ nghiệp vụ đi thị trường, quản lý khách, đơn hàng và báo cáo thực tế.</p>
+            <ul>
+              <li>Tuyến bán hàng, khách hàng và lịch chăm sóc</li>
+              <li>Đơn hàng, tồn kho, công nợ và trạng thái xử lý</li>
+              <li>Dashboard, báo cáo và trợ lý AI theo dữ liệu thật</li>
+            </ul>
+            <a class="card-link" href="https://zalo.me/0902964685" target="_blank" rel="noopener noreferrer">Trao đổi bài toán NPP <span>→</span></a>
+          </article>
+
+          <article class="solution-card reveal">
+            <div class="card-head"><span class="solution-badge">Marketing Automation</span><span class="card-index">03</span></div>
+            <div class="solution-icon">FB</div>
+            <h3>Facebook Automation</h3>
+            <p>Hỗ trợ nội dung, thu lead, phân loại nhu cầu và đưa khách hàng về một quy trình chăm sóc có dữ liệu thay vì xử lý rời rạc.</p>
+            <ul>
+              <li>Lập kế hoạch và chuẩn hóa nội dung</li>
+              <li>Gom bình luận, tin nhắn và nhu cầu khách hàng</li>
+              <li>Kết nối CRM, MCP-Plan hoặc luồng chăm sóc lại</li>
+            </ul>
+            <a class="card-link" href="https://zalo.me/0902964685" target="_blank" rel="noopener noreferrer">Trao đổi luồng automation <span>→</span></a>
+          </article>
+        </div>
+
+        <div class="mvp-callout reveal">
+          <div>
+            <span>MVP THEO NGHIỆP VỤ THẬT</span>
+            <h3>Cần một hệ thống tương tự cho mô hình của anh/chị?</h3>
+            <p>Bắt đầu từ một vấn đề nhỏ, triển khai được, đo được kết quả rồi mới mở rộng.</p>
+          </div>
+          <a class="btn" href="https://zalo.me/0902964685" target="_blank" rel="noopener noreferrer">Trao đổi bài toán</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-process" id="process">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div>
+            <p class="section-kicker">Cách triển khai</p>
+            <h2>Làm gọn, chạy thật, đo rồi mới mở rộng.</h2>
+          </div>
+          <p>Một MVP tốt không cần nhiều tính năng ngay từ đầu. Nó cần giải đúng việc, có người dùng thật và tạo ra dữ liệu để quyết định bước tiếp theo.</p>
+        </div>
+        <div class="process-grid">
+          <article class="process-card reveal"><span>01</span><h3>Hiểu cách đang vận hành</h3><p>Quan sát quy trình hiện tại, dữ liệu đang nằm ở đâu và ai là người sử dụng thật.</p></article>
+          <article class="process-card reveal"><span>02</span><h3>Chọn đúng vấn đề</h3><p>Ưu tiên việc đang gây mất thời gian, thất thoát, bỏ sót khách hoặc khó kiểm soát.</p></article>
+          <article class="process-card reveal"><span>03</span><h3>Làm MVP đủ dùng</h3><p>Đưa vào sử dụng sớm thay vì làm một bản demo đẹp nhưng không ai dùng hàng ngày.</p></article>
+          <article class="process-card reveal"><span>04</span><h3>Đo rồi mở rộng</h3><p>Dựa trên dữ liệu sử dụng thật để quyết định tính năng, automation và báo cáo tiếp theo.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-experience" id="experience">
+      <div class="container">
+        <div class="experience-panel reveal">
+          <div class="experience-copy">
+            <p class="section-kicker">Nền tảng kinh nghiệm</p>
+            <h2>Kinh nghiệm nhiều ngành, hiện tập trung vào F&B và số hóa vận hành.</h2>
+            <p>
+              Nền tảng từ phát triển thị trường, phân phối, B2B công nghiệp, Hair Salon,
+              sản phẩm tiêu dùng và dữ liệu khách hàng giúp tôi hiểu cách một quy trình bán hàng
+              thực sự vận hành — từ ngoài thị trường đến hệ thống phía sau.
+            </p>
+          </div>
+          <div class="experience-tags" aria-label="Kỹ năng và kinh nghiệm">
+            <span>Phát triển thị trường</span>
+            <span>Phân phối</span>
+            <span>Sales B2B / B2C</span>
+            <span>Dữ liệu khách hàng</span>
+            <span>Website & QR</span>
+            <span>AI ứng dụng</span>
+            <span>Hair & Beauty</span>
+            <span>B2B công nghiệp</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-contact" id="contact">
+      <div class="container">
+        <div class="contact-panel reveal">
+          <div class="contact-copy">
+            <p class="section-kicker">Liên hệ trực tiếp</p>
+            <h2>Có một bài toán kinh doanh hoặc MVP cần làm gọn?</h2>
+            <p>Trao đổi thẳng nhu cầu, cách đang vận hành và kết quả cần đạt. Không cần chuẩn bị tài liệu dài dòng trước.</p>
+          </div>
+          <div class="contact-actions">
+            <a class="btn btn-gold" href="tel:0902964685">Gọi 0902 964 685</a>
+            <a class="btn btn-dark-outline" href="https://zalo.me/0902964685" target="_blank" rel="noopener noreferrer">Nhắn Zalo</a>
+            <a class="btn btn-dark-outline" href="assets/files/khuong-binh.vcf" download>Lưu danh bạ</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <strong>KHƯƠNG BÌNH</strong>
+        <span>F&B Operations · Digital MVP · Automation</span>
+      </div>
+      <div class="footer-links">
+        <a href="ho-so-quan-tri-kinh-doanh.html">Hồ sơ kinh nghiệm</a>
+        <a href="qr-khuong-binh.html">QR Card</a>
+        <a href="https://ungdungthongminh.shop" target="_blank" rel="noopener noreferrer">Ứng dụng thông minh</a>
+      </div>
+      <small>© <span id="current-year">2026</span> Khương Bình.</small>
+    </div>
+  </footer>
+
+  <nav class="mobile-action-bar" aria-label="Liên hệ nhanh">
+    <a href="tel:0902964685"><span>☎</span><small>Gọi</small></a>
+    <a href="https://zalo.me/0902964685" target="_blank" rel="noopener noreferrer"><span>Z</span><small>Zalo</small></a>
+    <a class="mobile-primary" href="https://qr.bepsi.click/chill" target="_blank" rel="noopener noreferrer"><span>▦</span><small>Menu F&B</small></a>
+  </nav>
+
+  <script src="assets/js/home-v2.js"></script>
 </body>
 </html>
