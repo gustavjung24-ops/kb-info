@@ -2,11 +2,11 @@ BEGIN:VCARD
 VERSION:3.0
 N:Binh;Khuong;;;
 FN:Khương Bình
-ORG:Ung Dung Thong Minh
-TITLE:Smart Profile & Kinh doanh
+ORG:Khương Bình — F&B & Digital Operations
+TITLE:Vận hành F&B & Số hóa kinh doanh
 TEL;TYPE=CELL,VOICE:0902964685
-URL:https://www.ungdungthongminh.shop
-URL:https://www.thehairlab.top
-URL:https://www.truyendongcongnghiep.top
-NOTE:Smart Profile, QR Card, Website, Salon, Cong nghiep, Quan tri kinh doanh.
+URL:https://khuongbinh24-info.vercel.app/qr-khuong-binh.html
+URL:https://khuongbinh24-info.vercel.app/
+URL:https://qr.bepsi.click/chill
+NOTE:F&B đang vận hành. Phát triển MilkTea QR, MCP-Plan và Facebook Automation.
 END:VCARD
