@@ -1,143 +1,149 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="vi">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="theme-color" content="#071b2d" />
-
-  <title>eCard Khương Bình — F&B & Giải pháp số</title>
-  <meta name="description" content="Danh thiếp điện tử chính thức của Khương Bình — vận hành F&B, MilkTea QR, MCP-Plan và Facebook Automation." />
-  <link rel="canonical" href="https://khuongbinh24-info.vercel.app/qr-khuong-binh.html" />
-  <meta property="og:title" content="Khương Bình — F&B & Giải pháp số" />
-  <meta property="og:description" content="Danh thiếp điện tử chính thức: gọi, Zalo, lưu danh bạ và xem các hệ thống đang phát triển." />
-  <meta property="og:url" content="https://khuongbinh24-info.vercel.app/qr-khuong-binh.html" />
-
-  <link rel="stylesheet" href="assets/css/qr-card.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#071b2d">
+  <meta name="description" content="eCard chính thức của Khương Bình — kinh doanh, phát triển thị trường và giải pháp số.">
+  <link rel="canonical" href="https://khuongbinh24-info.vercel.app/qr-khuong-binh.html">
+  <meta property="og:title" content="Khương Bình — eCard">
+  <meta property="og:description" content="Gọi, Zalo, lưu danh bạ và xem hồ sơ công việc.">
+  <meta property="og:url" content="https://khuongbinh24-info.vercel.app/qr-khuong-binh.html">
+  <title>Khương Bình — eCard</title>
+  <link rel="stylesheet" href="assets/css/qr-card.css">
 </head>
 <body>
-  <main class="qr-shell">
-    <section class="qr-hero">
-      <a class="qr-share" href="https://zalo.me/0902964685">↗ Kết nối</a>
+  <main class="ecard-shell">
+    <header class="ecard-head">
+      <button class="share-button" id="share-card" type="button" aria-label="Chia sẻ eCard">
+        <span>↗</span> Chia sẻ
+      </button>
 
-      <div class="qr-hero-inner">
-        <div class="qr-avatar-wrap">
-          <img class="qr-avatar" src="assets/images/avatar.jpg" alt="Khương Bình" />
-          <span class="qr-check">✓</span>
+      <div class="identity-row">
+        <div class="avatar-wrap">
+          <img class="avatar" src="assets/images/avatar.jpg" alt="Khương Bình">
+          <span class="verified" aria-hidden="true">✓</span>
         </div>
 
-        <div>
-          <h1 class="qr-name">Khương Bình</h1>
-          <p class="qr-role">Vận hành F&B & Số hóa kinh doanh</p>
-
-          <div class="qr-info">
-            <span>☎ 0902 964 685</span>
-            <span>💬 Zalo: 0902 964 685</span>
-            <span>📍 Việt Nam</span>
+        <div class="identity-copy">
+          <p class="eyebrow">ECARD CHÍNH THỨC</p>
+          <h1>Khương Bình</h1>
+          <p class="role">Kinh doanh & giải pháp số</p>
+          <div class="contact-line">
+            <a href="tel:0902964685">0902 964 685</a>
+            <span>•</span>
+            <a href="https://zalo.me/0902964685" target="_blank" rel="noopener noreferrer">Zalo</a>
           </div>
         </div>
+
+        <a class="qr-box" href="https://khuongbinh24-info.vercel.app/qr-khuong-binh.html" aria-label="Mở eCard Khương Bình">
+          <img src="https://quickchart.io/qr?text=https%3A%2F%2Fkhuongbinh24-info.vercel.app%2Fqr-khuong-binh.html&size=220&margin=1" alt="QR mở eCard Khương Bình">
+          <small>Quét eCard</small>
+        </a>
       </div>
 
-      <a class="qr-mini-qr" href="https://khuongbinh24-info.vercel.app/qr-khuong-binh.html" aria-label="Mở eCard Khương Bình">
-        <img
-          class="qr-mini-qr-img"
-          src="https://quickchart.io/qr?text=https%3A%2F%2Fkhuongbinh24-info.vercel.app%2Fqr-khuong-binh.html&size=220&margin=1"
-          alt="QR mở eCard Khương Bình"
-        />
-        <small>Quét để mở eCard</small>
-      </a>
-    </section>
+      <p class="identity-note">Phát triển thị trường · F&amp;B · Công cụ số</p>
+    </header>
 
-    <section class="qr-main">
-      <div class="qr-actions">
-        <a class="qr-action call" href="tel:0902964685">
-          <span><i class="fa-solid fa-phone"></i></span>
+    <section class="ecard-body">
+      <div class="primary-actions" aria-label="Liên hệ nhanh">
+        <a class="action action-call" href="tel:0902964685">
+          <span class="action-icon">☎</span>
           <strong>Gọi</strong>
         </a>
-
-        <a class="qr-action zalo" href="https://zalo.me/0902964685">
-          <span><i class="fa-solid fa-comment-dots"></i></span>
+        <a class="action action-zalo" href="https://zalo.me/0902964685" target="_blank" rel="noopener noreferrer">
+          <span class="action-icon">Z</span>
           <strong>Zalo</strong>
         </a>
-
-        <a class="qr-action save" href="assets/files/khuong-binh.vcf" type="text/vcard">
-          <span><i class="fa-solid fa-address-book"></i></span>
-          <strong>Lưu contact</strong>
+        <a class="action action-save" href="assets/files/khuong-binh.vcf" download>
+          <span class="action-icon">▣</span>
+          <strong>Lưu danh bạ</strong>
         </a>
       </div>
 
-      <h2 class="qr-section-title">Đang vận hành & phát triển</h2>
+      <div class="section-label">
+        <span></span>
+        <strong>Hồ sơ & công cụ</strong>
+        <span></span>
+      </div>
 
-      <div class="qr-services">
-        <a class="qr-service" href="https://qr.bepsi.click/chill">
-          <div class="qr-service-icon"><i class="fa-solid fa-mug-hot"></i></div>
-          <strong>F&B</strong>
-          <span>Menu và hoạt động đang vận hành</span>
+      <div class="quick-grid">
+        <a class="quick-card quick-fnb" href="index.html#focus">
+          <span class="quick-icon">F&amp;B</span>
+          <strong>F&amp;B</strong>
+          <small>Sản phẩm & điểm bán</small>
         </a>
 
-        <a class="qr-service" href="index.html#milktea">
-          <div class="qr-service-icon"><i class="fa-solid fa-qrcode"></i></div>
+        <a class="quick-card quick-qr" href="index.html#milktea">
+          <span class="quick-icon">QR</span>
           <strong>MilkTea QR</strong>
-          <span>Menu, đặt món và khách hàng</span>
+          <small>Menu & đặt món</small>
         </a>
 
-        <a class="qr-service" href="index.html#systems">
-          <div class="qr-service-icon"><i class="fa-solid fa-route"></i></div>
+        <a class="quick-card quick-mcp" href="index.html#systems">
+          <span class="quick-icon">MCP</span>
           <strong>MCP-Plan</strong>
-          <span>MVP vận hành nhà phân phối</span>
+          <small>Vận hành NPP</small>
         </a>
 
-        <a class="qr-service" href="index.html#systems">
-          <div class="qr-service-icon"><i class="fa-brands fa-facebook-f"></i></div>
+        <a class="quick-card quick-auto" href="index.html#systems">
+          <span class="quick-icon">FB</span>
           <strong>Automation</strong>
-          <span>Nội dung, lead và chăm sóc khách</span>
+          <small>Lead & chăm sóc</small>
         </a>
       </div>
 
-      <section class="qr-feature-panel">
-        <div class="qr-feature-grid">
-          <a class="qr-feature" href="index.html">
-            <div>
-              <div class="qr-feature-icon"><i class="fa-solid fa-house"></i></div>
-              <strong>Hồ sơ chính</strong>
-              <span>Xem rõ hoạt động F&B và các hệ thống số đang phát triển</span>
-            </div>
-            <div class="qr-arrow">›</div>
-          </a>
+      <div class="detail-panel">
+        <a class="detail-link" href="index.html">
+          <span class="detail-icon">◎</span>
+          <span class="detail-copy">
+            <strong>Hồ sơ chi tiết</strong>
+            <small>Kinh nghiệm, sản phẩm và hệ thống đang phát triển</small>
+          </span>
+          <span class="detail-arrow">›</span>
+        </a>
 
-          <a class="qr-feature" href="https://qr.bepsi.click/chill">
-            <div>
-              <div class="qr-feature-icon"><i class="fa-solid fa-mobile-screen-button"></i></div>
-              <strong>Menu F&B đang chạy</strong>
-              <span>Mở trải nghiệm QR Menu và đặt món trên điện thoại</span>
-            </div>
-            <div class="qr-arrow">›</div>
-          </a>
+        <a class="detail-link" href="ho-so-quan-tri-kinh-doanh.html">
+          <span class="detail-icon">▦</span>
+          <span class="detail-copy">
+            <strong>Kinh nghiệm thị trường</strong>
+            <small>Phân phối, sales, B2B và công cụ hỗ trợ bán hàng</small>
+          </span>
+          <span class="detail-arrow">›</span>
+        </a>
 
-          <a class="qr-feature" href="ho-so-quan-tri-kinh-doanh.html">
-            <div>
-              <div class="qr-feature-icon"><i class="fa-solid fa-briefcase"></i></div>
-              <strong>Kinh nghiệm thị trường</strong>
-              <span>Phân phối, B2B, sales và nền tảng vận hành thực tế</span>
-            </div>
-            <div class="qr-arrow">›</div>
-          </a>
+        <a class="detail-link detail-link-accent" href="https://zalo.me/0902964685" target="_blank" rel="noopener noreferrer">
+          <span class="detail-icon">✦</span>
+          <span class="detail-copy">
+            <strong>Liên hệ công việc</strong>
+            <small>Trao đổi nhanh qua Zalo</small>
+          </span>
+          <span class="detail-arrow">›</span>
+        </a>
+      </div>
 
-          <a class="qr-feature" href="index.html#contact">
-            <div>
-              <div class="qr-feature-icon"><i class="fa-solid fa-comments"></i></div>
-              <strong>Trao đổi một bài toán</strong>
-              <span>Bắt đầu từ F&B, nhà phân phối hoặc một MVP số hóa cụ thể</span>
-            </div>
-            <div class="qr-arrow">›</div>
-          </a>
-        </div>
-
-        <footer class="qr-footer">
-          eCard chính thức • Nội dung cập nhật, đường dẫn giữ nguyên
-        </footer>
-      </section>
+      <footer class="ecard-footer">Đường dẫn eCard cố định · Nội dung được cập nhật</footer>
     </section>
   </main>
+
+  <script>
+    (() => {
+      const button = document.getElementById('share-card');
+      const url = 'https://khuongbinh24-info.vercel.app/qr-khuong-binh.html';
+      if (!button) return;
+      button.addEventListener('click', async () => {
+        try {
+          if (navigator.share) {
+            await navigator.share({ title: 'Khương Bình — eCard', url });
+            return;
+          }
+          await navigator.clipboard.writeText(url);
+          const old = button.innerHTML;
+          button.textContent = 'Đã sao chép';
+          setTimeout(() => { button.innerHTML = old; }, 1600);
+        } catch (_) {}
+      });
+    })();
+  </script>
 </body>
 </html>
