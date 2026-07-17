@@ -419,9 +419,13 @@ a {
   min-height: 80px;
   flex: 1 1 80px;
   overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px;
   border: 1px solid var(--line);
   border-radius: 17px;
-  background: #d6ccbd;
+  background: #ece4d8;
   box-shadow: var(--shadow);
   text-decoration: none;
 }
@@ -429,23 +433,19 @@ a {
 .ecard-feature::after {
   content: "";
   position: absolute;
-  inset: 0;
+  inset: 6px;
+  border-radius: 11px;
   pointer-events: none;
-  background: linear-gradient(90deg, rgba(23, 35, 43, 0.08), transparent 42%, rgba(23, 35, 43, 0.05));
+  background: linear-gradient(90deg, rgba(23, 35, 43, 0.025), transparent 42%, rgba(23, 35, 43, 0.02));
 }
 
 .ecard-feature img {
   width: 100%;
   height: 100%;
   display: block;
-  object-fit: cover;
-  object-position: center 50%;
-  transition: transform 0.3s ease;
-}
-
-.ecard-feature:hover img,
-.ecard-feature:focus-visible img {
-  transform: scale(1.02);
+  object-fit: contain;
+  object-position: center center;
+  border-radius: 11px;
 }
 
 @media (min-width: 600px) {
@@ -549,5 +549,11 @@ a {
   .ecard-feature {
     min-height: 64px;
     flex-basis: 64px;
+    padding: 4px;
+  }
+
+  .ecard-feature::after {
+    inset: 4px;
+    border-radius: 12px;
   }
 }
