@@ -1,6 +1,6 @@
 # Checklist hoàn thiện eCard và trang chi tiết
 
-Ngày hoàn thành: 2026-07-16
+Ngày hoàn thành: 2026-07-17
 
 ## Mặt tiền eCard
 
@@ -13,6 +13,10 @@ Ngày hoàn thành: 2026-07-16
 - [x] Giữ bố cục cố định theo chiều cao mobile
 - [x] Bỏ footer và text giải thích thừa
 - [x] Tăng phiên bản CSS để tránh cache cũ
+- [x] Map ảnh `map-mat-tien-cảd.png` vào phần trống cuối eCard
+- [x] Banner tự giãn theo chiều cao còn lại của màn hình
+- [x] Banner mở menu F&B đang chạy khi bấm
+- [x] Không thêm text demo lên banner
 
 ## Trang chi tiết
 
@@ -36,3 +40,5 @@ Ngày hoàn thành: 2026-07-16
 - [x] QR vẫn mã hóa đúng URL eCard cố định
 - [x] Các nút Gọi, Zalo, Lưu danh bạ vẫn giữ đúng liên kết
 - [x] Mobile eCard không dùng cuộn trang trong khung chính
+- [x] Ảnh banner dùng `object-fit: cover` và không làm biến dạng bố cục
+- [x] Màn hình thấp tự giảm chiều cao banner
