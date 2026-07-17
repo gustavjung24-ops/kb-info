@@ -215,6 +215,7 @@ a {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 8px;
+  flex: 0 0 auto;
 }
 
 .action {
@@ -258,6 +259,7 @@ a {
   align-items: center;
   color: var(--ink);
   font-size: 0.76rem;
+  flex: 0 0 auto;
 }
 
 .section-label span {
@@ -273,6 +275,7 @@ a {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 7px;
+  flex: 0 0 auto;
 }
 
 .quick-card {
@@ -362,6 +365,7 @@ a {
   border-radius: 17px;
   background: var(--surface);
   box-shadow: var(--shadow);
+  flex: 0 0 auto;
 }
 
 .detail-link {
@@ -408,6 +412,40 @@ a {
   color: var(--caramel);
   font-size: 1.1rem;
   font-weight: 900;
+}
+
+.ecard-feature {
+  position: relative;
+  min-height: 80px;
+  flex: 1 1 80px;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 17px;
+  background: #d6ccbd;
+  box-shadow: var(--shadow);
+  text-decoration: none;
+}
+
+.ecard-feature::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: linear-gradient(90deg, rgba(23, 35, 43, 0.08), transparent 42%, rgba(23, 35, 43, 0.05));
+}
+
+.ecard-feature img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  object-position: center 50%;
+  transition: transform 0.3s ease;
+}
+
+.ecard-feature:hover img,
+.ecard-feature:focus-visible img {
+  transform: scale(1.02);
 }
 
 @media (min-width: 600px) {
@@ -506,5 +544,10 @@ a {
   .detail-link {
     min-height: 49px;
     padding-block: 5px;
+  }
+
+  .ecard-feature {
+    min-height: 64px;
+    flex-basis: 64px;
   }
 }
