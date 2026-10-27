@@ -1,9 +1,9 @@
 {
-  "$schemaDescription": "Futurebook eCard: all optional R2 images are blank. Official logo loads directly from the verified R2 object in HTML, without depending on JavaScript or media.json.",
+  "$schemaDescription": "Futurebook eCard uses official FBMN logo directly from R2 and the original user portrait with brightness-only correction from R2. Other image slots remain blank.",
   "r2PublicBaseUrl": "https://pub-259185b8bdab4d64b5b56f224663bf33.r2.dev/",
   "images": {
     "hero": "",
-    "avatar": "",
+    "avatar": "ecard/profile/avatar-original-bright.webp",
     "bookstore": "",
     "agency": "",
     "school": "",
