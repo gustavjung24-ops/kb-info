@@ -63,4 +63,12 @@ Website công ty và app chưa được xác minh URL nên hiển thị trạng 
 
 ## Mobile / logo chính thức
 
-Logo sử dụng đúng hình nhận diện trong tài liệu Futurebook do người dùng cung cấp (crop, không tái vẽ), đã tải lên R2 tại `ecard/brand/fbmn-logo.webp`. Giao diện mobile: 2 cột tiện ích, 2 cột lĩnh vực, thẻ thấp hơn và nhãn ngắn, các ảnh khác để trống. Breakpoint được thay trực tiếp trong stylesheet chính; không nối CSS đè.
+Logo FBMN tải trực tiếp từ R2 `https://pub-259185b8bdab4d64b5b56f224663bf33.r2.dev/ecard/brand/fbmn-logo.webp` bằng thẻ `img` trong HTML, không phụ thuộc tải `media.json` hoặc JavaScript. Sáu chức năng chỉ có tiêu đề, không subtitle; trên mobile hiển thị hai cột. Bốn lĩnh vực hiển thị hai cột, ảnh lớn hơn vùng chữ, không có mô tả phụ. Breakpoint chỉnh ngay trong stylesheet chính, không dùng CSS đè.
+
+## Cập nhật ghi chú thiết kế 27/10/2026
+
+- Card chức năng: Website / Order / Sản phẩm / Báo giá / Khách hàng / Đặt lịch.
+- Không hiện mô tả phụ ở cả 6 card, tránh card cao.
+- Card lĩnh vực: ảnh có tỷ lệ khung cố định 1.65:1 trên mobile, chú thích chỉ có biểu tượng và tên.
+- Logo chính thức được lấy trực tiếp bằng URL từ R2 trong HTML, để không bị mất khi lỗi script hoặc media.json.
+- Các đường dẫn chưa xác minh (Website/Order/Sản phẩm) giữ trạng thái không thể bấm; không tạo URL giả.
