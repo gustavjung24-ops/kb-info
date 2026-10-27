@@ -36,6 +36,7 @@ button{cursor:pointer}
 .media-slot.has-image{border:0;background:none}
 .profile-panel{position:relative;z-index:2;display:grid;grid-template-columns:150px 1fr auto;align-items:center;gap:23px;background:var(--paper);margin:-14px 24px 0;padding:24px 26px;border-radius:27px;box-shadow:var(--shadow);border:1px solid #f0e9fc}
 .avatar{width:144px;aspect-ratio:1;border-radius:50%;border:2px dashed #be9cde;box-shadow:0 0 0 8px #f2eafe}
+.avatar.is-default-avatar img{object-fit:contain;padding:10%;background:#fff}
 .micro-label{font-size:.64rem;letter-spacing:.18em;color:#8765a3;font-weight:820;margin:0 0 2px}
 .profile-copy h2{font-size:clamp(2rem,5vw,3.2rem);line-height:1;letter-spacing:-.045em;margin:0 0 10px;font-weight:900;color:var(--purple-dark)}
 .job-title{display:inline-block;color:white;background:linear-gradient(100deg,#ed073d,#d50345);border-radius:100px;padding:7px 19px;font-weight:800;margin:0 0 6px}

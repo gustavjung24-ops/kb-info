@@ -1,5 +1,5 @@
 "use strict";
-/* Futurebook eCard. One media adapter for all R2 imagery; no fallback photos. */
+/* Futurebook eCard. R2 media with shared company avatar fallback and optional personal portraits. */
 (() => {
   const cardUrl = document.querySelector('link[rel="canonical"]')?.href || window.location.href;
   const shareTitle = document.querySelector('meta[property="og:title"]')?.content || document.title;
@@ -44,7 +44,7 @@
     } catch (_) {
       return;
     }
-    // Only configured public R2 URLs are eligible. Empty fields leave DOM slots blank.
+    // Keep every media URL within the configured HTTPS R2 origin.
     const base = config && typeof config.r2PublicBaseUrl === "string" ? config.r2PublicBaseUrl.trim() : "";
     if (!base) return;
     let origin;
@@ -53,28 +53,43 @@
       if (parsed.protocol !== "https:") return;
       origin = parsed.origin;
     } catch (_) { return; }
-    document.querySelectorAll("[data-media]").forEach((slot) => {
-      const key = slot.getAttribute("data-media");
-      const path = config.images && config.images[key];
-      if (typeof path !== "string" || !path || path.startsWith("/") || path.includes("..") || /^(?:https?:|data:|\/\/)/i.test(path)) return;
-      let src;
+    function safeMediaUrl(path) {
+      if (typeof path !== "string" || !path || path.startsWith("/") || path.includes("..") || /^(?:https?:|data:|\/\/)/i.test(path)) return null;
       try {
-        src = new URL(path, base.endsWith("/") ? base : base + "/");
-        if (src.origin !== origin) return;
-      } catch (_) { return; }
+        const result = new URL(path, base.endsWith("/") ? base : base + "/");
+        return result.origin === origin ? result.href : null;
+      } catch (_) { return null; }
+    }
+    const defaultAvatarUrl = safeMediaUrl(config.defaultAvatar);
+    document.querySelectorAll("[data-media]").forEach((slot) => {
+      const key = slot.getAttribute("data-media") || "";
+      const isAvatar = key === "avatar" || /^avatar[A-Z]/.test(key);
+      const personalPath = config.images && config.images[key];
+      const personalUrl = safeMediaUrl(personalPath);
+      const primaryUrl = personalUrl || (isAvatar ? defaultAvatarUrl : null);
+      if (!primaryUrl) return;
+      const fallbackUrl = isAvatar && personalUrl !== defaultAvatarUrl ? defaultAvatarUrl : null;
       const img = document.createElement("img");
       img.alt = slot.getAttribute("aria-label") || "";
-      img.loading = key === "hero" || key === "avatar" ? "eager" : "lazy";
+      img.loading = key === "hero" || isAvatar ? "eager" : "lazy";
       img.decoding = "async";
-      img.addEventListener("load", () => slot.classList.add("has-image"), { once: true });
+      const setAvatarMode = (url) => {
+        if (isAvatar) slot.classList.toggle("is-default-avatar", url === defaultAvatarUrl);
+      };
+      img.addEventListener("load", () => slot.classList.add("has-image"));
       img.addEventListener("error", () => {
+        if (fallbackUrl && img.src !== fallbackUrl) {
+          setAvatarMode(fallbackUrl);
+          img.src = fallbackUrl;
+          return;
+        }
         img.remove();
         slot.classList.remove("has-image");
-      }, { once: true });
-      // Lazy images must enter the DOM before loading; a detached lazy image
-      // can wait forever, which previously left all cards below the hero blank.
+      });
+      // Append lazy images before setting src, otherwise below-fold slots can stay empty.
       slot.replaceChildren(img);
-      img.src = src.href;
+      setAvatarMode(primaryUrl);
+      img.src = primaryUrl;
     });
   }
   loadMedia();
