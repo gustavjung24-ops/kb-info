@@ -1,14 +1,14 @@
 {
-  "$schemaDescription": "Futurebook eCard uses official FBMN logo directly from R2 and the original user portrait with brightness-only correction from R2. Other image slots remain blank.",
+  "$schemaDescription": "Futurebook Mien Nam eCard media: six illustrative images hosted on Cloudflare R2 bucket fbmn, original brightened avatar on R2, official FBMN logo loaded directly from R2 in HTML.",
   "r2PublicBaseUrl": "https://pub-259185b8bdab4d64b5b56f224663bf33.r2.dev/",
   "images": {
-    "hero": "",
+    "hero": "ecard/hero/hero.webp",
     "avatar": "ecard/profile/avatar-original-bright.webp",
-    "bookstore": "",
-    "agency": "",
-    "school": "",
-    "enterprise": "",
-    "company": "",
+    "bookstore": "ecard/sectors/bookstore.webp",
+    "agency": "ecard/sectors/agency.webp",
+    "school": "ecard/sectors/school.webp",
+    "enterprise": "ecard/sectors/enterprise.webp",
+    "company": "ecard/company/company.webp",
     "logo": ""
   }
 }
