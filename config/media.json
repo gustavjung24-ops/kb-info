@@ -1,5 +1,5 @@
 {
-  "$schemaDescription": "Futurebook Mien Nam eCard media: six illustrative images hosted on Cloudflare R2 bucket fbmn, original brightened avatar on R2, official FBMN logo loaded directly from R2 in HTML.",
+  "$schemaDescription": "Futurebook Mien Nam eCard: official FBMN shared avatar from R2 is the default for all staff; individual portrait paths take precedence; illustrative images hosted on R2.",
   "r2PublicBaseUrl": "https://pub-259185b8bdab4d64b5b56f224663bf33.r2.dev/",
   "images": {
     "hero": "ecard/hero/hero.webp",
@@ -10,6 +10,7 @@
     "enterprise": "ecard/sectors/enterprise.webp",
     "company": "ecard/company/company.webp",
     "logo": "",
-    "avatarMy": "ecard/profile/diem-my-avatar-v1.svg"
-  }
+    "avatarMy": ""
+  },
+  "defaultAvatar": "ecard/profile/avatar-default-fbmn-v1.svg"
 }

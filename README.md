@@ -72,3 +72,11 @@ Logo FBMN tải trực tiếp từ R2 `https://pub-259185b8bdab4d64b5b56f224663b
 - Card lĩnh vực: ảnh có tỷ lệ khung cố định 1.65:1 trên mobile, chú thích chỉ có biểu tượng và tên.
 - Logo chính thức được lấy trực tiếp bằng URL từ R2 trong HTML, để không bị mất khi lỗi script hoặc media.json.
 - Các đường dẫn chưa xác minh (Website/Order/Sản phẩm) giữ trạng thái không thể bấm; không tạo URL giả.
+
+## Avatar mặc định nhân sự (27/10/2026)
+
+- Logo FBMN chuẩn (SVG vector 512 × 512, được dựng từ logo anh cung cấp): `ecard/profile/avatar-default-fbmn-v1.svg`, trên bucket R2 `fbmn`.
+- `config/media.json` có `defaultAvatar`; JS tự dùng file này cho avatar nhân viên chưa có ảnh riêng hoặc khi ảnh cá nhân bị lỗi tải.
+- Ảnh cá nhân (`images.avatar` với anh Bình) vẫn ưu tiên và không bị ghi đè.
+- ECard Nguyễn Thị Diễm My có `images.avatarMy` trống nên dùng logo FBMN mặc định; không dùng avatar DM nữa.
+- Nhân viên mới có thể đặt `data-media="avatarTen"` và để ảnh tương ứng trống trong `images` để dùng ảnh chung; khi có ảnh thật, chỉ điền đường dẫn R2 vào `images.avatarTen`.
