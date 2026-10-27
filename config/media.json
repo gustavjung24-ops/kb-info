@@ -1,0 +1,13 @@
+{
+  "$schemaDescription": "Futurebook eCard media configuration. Leave blank until R2 is ready. All images served from the public Cloudflare R2 hostname configured below.",
+  "r2PublicBaseUrl": "",
+  "images": {
+    "hero": "",
+    "avatar": "",
+    "bookstore": "",
+    "agency": "",
+    "school": "",
+    "enterprise": "",
+    "company": ""
+  }
+}

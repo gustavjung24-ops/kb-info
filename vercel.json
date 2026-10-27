@@ -3,5 +3,24 @@
   "framework": null,
   "buildCommand": null,
   "installCommand": null,
-  "outputDirectory": "."
+  "outputDirectory": ".",
+  "trailingSlash": false,
+  "cleanUrls": false,
+  "redirects": [
+    {
+      "source": "/he-sinh-thai-website.html",
+      "destination": "/qr-khuong-binh.html",
+      "permanent": true
+    },
+    {
+      "source": "/ho-so-quan-tri-kinh-doanh.html",
+      "destination": "/qr-khuong-binh.html",
+      "permanent": true
+    },
+    {
+      "source": "/mau-danh-thiep-dien-tu.html",
+      "destination": "/qr-khuong-binh.html",
+      "permanent": true
+    }
+  ]
 }

@@ -1,12 +1,10 @@
 BEGIN:VCARD
 VERSION:3.0
-N:Binh;Khuong;;;
+N:Bình;Khương;;;
 FN:Khương Bình
-ORG:Khương Bình
-TITLE:Phát triển thị trường & Giải pháp số
-TEL;TYPE=CELL,VOICE:0902964685
+ORG:Futurebook Miền Nam
+TITLE:Giám sát Kinh doanh
+TEL;TYPE=CELL,VOICE:+84902964685
 URL:https://khuongbinh24-info.vercel.app/qr-khuong-binh.html
-URL:https://khuongbinh24-info.vercel.app/
-URL:https://qr.bepsi.click/chill
-NOTE:Phát triển thị trường, F&B, phân phối và các công cụ số hỗ trợ bán hàng, chăm sóc khách hàng và vận hành.
+NOTE:Tập vở và văn phòng phẩm - phát triển khách hàng và điểm bán miền Nam.
 END:VCARD
