@@ -9,6 +9,7 @@
     "school": "ecard/sectors/school.webp",
     "enterprise": "ecard/sectors/enterprise.webp",
     "company": "ecard/company/company.webp",
-    "logo": ""
+    "logo": "",
+    "avatarMy": "ecard/profile/diem-my-avatar-v1.svg"
   }
 }
