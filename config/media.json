@@ -10,7 +10,8 @@
     "enterprise": "ecard/sectors/enterprise.webp",
     "company": "ecard/company/company.webp",
     "logo": "",
-    "avatarMy": ""
+    "avatarMy": "",
+    "avatarToan": ""
   },
   "defaultAvatar": "ecard/profile/avatar-default-fbmn-v1.svg"
 }

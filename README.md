@@ -80,3 +80,11 @@ Logo FBMN tải trực tiếp từ R2 `https://pub-259185b8bdab4d64b5b56f224663b
 - Ảnh cá nhân (`images.avatar` với anh Bình) vẫn ưu tiên và không bị ghi đè.
 - ECard Nguyễn Thị Diễm My có `images.avatarMy` trống nên dùng logo FBMN mặc định; không dùng avatar DM nữa.
 - Nhân viên mới có thể đặt `data-media="avatarTen"` và để ảnh tương ứng trống trong `images` để dùng ảnh chung; khi có ảnh thật, chỉ điền đường dẫn R2 vào `images.avatarTen`.
+
+## eCard Nguyễn Quốc Toản — Giám sát kinh doanh Miền Trung
+
+- Trang: `qr-nguyen-quoc-toan.html`
+- Số điện thoại / Zalo dạng liên kết: 0939 823 824 (chưa xác minh tài khoản Zalo)
+- VCF: `assets/files/nguyen-quoc-toan.vcf`
+- Avatar: `images.avatarToan` rỗng để sử dụng avatar FBMN mặc định trên R2.
+- Email cá nhân: chưa cung cấp, không hiển thị và không thêm vào danh bạ.
