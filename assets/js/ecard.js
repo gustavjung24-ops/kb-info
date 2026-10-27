@@ -64,7 +64,14 @@
       img.alt = slot.getAttribute("aria-label") || "";
       img.loading = key === "hero" || key === "avatar" ? "eager" : "lazy";
       img.decoding = "async";
-      img.onload = () => { slot.classList.add("has-image"); slot.replaceChildren(img); };
+      img.addEventListener("load", () => slot.classList.add("has-image"), { once: true });
+      img.addEventListener("error", () => {
+        img.remove();
+        slot.classList.remove("has-image");
+      }, { once: true });
+      // Lazy images must enter the DOM before loading; a detached lazy image
+      // can wait forever, which previously left all cards below the hero blank.
+      slot.replaceChildren(img);
       img.src = src.href;
     });
   }
