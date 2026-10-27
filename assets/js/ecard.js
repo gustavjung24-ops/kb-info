@@ -1,14 +1,16 @@
 "use strict";
 /* Futurebook eCard. One media adapter for all R2 imagery; no fallback photos. */
 (() => {
-  const cardUrl = "https://khuongbinh24-info.vercel.app/qr-khuong-binh.html";
+  const cardUrl = document.querySelector('link[rel="canonical"]')?.href || window.location.href;
+  const shareTitle = document.querySelector('meta[property="og:title"]')?.content || document.title;
+  const shareText = document.querySelector('meta[property="og:description"]')?.content || "";
   const shareButton = document.getElementById("share-card");
   const status = document.getElementById("share-result");
 
   async function shareCard() {
     try {
       if (navigator.share) {
-        await navigator.share({ title: "Khương Bình | Futurebook Miền Nam", text: "Giám sát Kinh doanh", url: cardUrl });
+        await navigator.share({ title: shareTitle, text: shareText, url: cardUrl });
         return;
       }
       if (navigator.clipboard && window.isSecureContext) {
