@@ -1,0 +1,13 @@
+{
+  "$schemaDescription": "Futurebook eCard. Public R2 bucket fbmn is configured; media paths intentionally blank until approved real images are uploaded.",
+  "r2PublicBaseUrl": "https://pub-259185b8bdab4d64b5b56f224663bf33.r2.dev/",
+  "images": {
+    "hero": "",
+    "avatar": "",
+    "bookstore": "",
+    "agency": "",
+    "school": "",
+    "enterprise": "",
+    "company": ""
+  }
+}
