@@ -60,3 +60,7 @@ Khi có ảnh thật đã được duyệt:
 Nút Gọi / Zalo / Lưu danh bạ đã sử dụng số điện thoại hiện có trong repo cũ: **0902 964 685**. Cần thay số tại HTML và vCard nếu thông tin liên hệ thay đổi.
 
 Website công ty và app chưa được xác minh URL nên hiển thị trạng thái “Đang cập nhật”, không trỏ tới trang giả.
+
+## Mobile / logo chính thức
+
+Logo sử dụng đúng hình nhận diện trong tài liệu Futurebook do người dùng cung cấp (crop, không tái vẽ), đã tải lên R2 tại `ecard/brand/fbmn-logo.webp`. Giao diện mobile: 2 cột tiện ích, 2 cột lĩnh vực, thẻ thấp hơn và nhãn ngắn, các ảnh khác để trống. Breakpoint được thay trực tiếp trong stylesheet chính; không nối CSS đè.
