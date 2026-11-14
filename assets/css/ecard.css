@@ -55,12 +55,13 @@ button{cursor:pointer}
 .cta-save{background:linear-gradient(110deg,#7724b6,#4b0f90)}
 .zalo-mark{display:grid;place-items:center;width:30px;height:30px;border-radius:50%;background:#fff;color:#006fe3;font-weight:950;font-size:1.1rem}
 .links-section{padding:13px 24px 0}
-.quick-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
-.quick-card{display:flex;align-items:center;justify-content:center;gap:11px;min-width:0;min-height:72px;background:#fff;border:1px solid #ede5f8;border-radius:17px;padding:12px;text-decoration:none;box-shadow:0 4px 16px rgba(51,23,99,.055)}
-.quick-card>.icon{color:var(--purple);width:29px;height:29px}
-.quick-card b{display:block;color:var(--purple-dark);font-size:.88rem;line-height:1.2;font-weight:800;white-space:nowrap}
-.quick-card:not(.is-pending):hover{border-color:#af80e4;box-shadow:0 7px 18px rgba(83,24,155,.12)}
-.quick-card.is-pending{background:#fbf9fe}
+.quick-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px}
+.quick-card{position:relative;display:flex;align-items:center;justify-content:center;gap:10px;min-width:0;min-height:62px;padding:10px 12px;overflow:hidden;background:linear-gradient(155deg,#fff 0%,#fdfbff 56%,#f5effd 100%);border:1px solid #e5d8f4;border-radius:15px;text-decoration:none;box-shadow:0 2px 0 rgba(75,22,141,.13),0 8px 18px rgba(65,23,115,.09),inset 0 1px 0 rgba(255,255,255,.98);transition:transform .18s ease,border-color .18s ease,box-shadow .18s ease,background .18s ease}
+.quick-card>.icon{color:var(--purple);width:25px;height:25px;stroke-width:2.05;filter:drop-shadow(0 1px 0 rgba(75,22,141,.1))}
+.quick-card b{display:block;color:var(--purple-dark);font-size:clamp(.88rem,1.5vw,1rem);line-height:1.16;font-weight:850;letter-spacing:-.015em;white-space:nowrap}
+.quick-card:not(.is-pending):hover{transform:translateY(-2px);border-color:#aa79df;background:linear-gradient(155deg,#fff,#f7f0ff);box-shadow:0 4px 0 rgba(75,22,141,.12),0 12px 22px rgba(83,24,155,.17),inset 0 1px 0 #fff}
+.quick-card:not(.is-pending):active{transform:translateY(1px);box-shadow:0 1px 0 rgba(75,22,141,.14),0 3px 9px rgba(65,23,115,.09)}
+.quick-card.is-pending{background:linear-gradient(155deg,#fdfbff,#f6f1fb);cursor:default}
 .share-link{margin:14px auto 2px;display:flex;align-items:center;gap:8px;background:none;color:#5b2294;border:0;font-weight:770;font-size:.85rem;padding:7px}
 .share-link .icon{width:18px;height:18px}
 .sectors-panel{margin:12px 24px 0;background:#fff;border:1px solid #eee6f8;border-radius:22px;padding:20px;box-shadow:var(--shadow)}
@@ -115,10 +116,10 @@ button{cursor:pointer}
  .cta .icon{width:21px;height:21px}
  .zalo-mark{width:24px;height:24px;font-size:.92rem}
  .links-section{padding:10px 12px 0}
- .quick-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
- .quick-card{gap:9px;padding:9px 10px;min-height:60px;border-radius:13px;flex-wrap:nowrap;align-items:center;justify-content:center}
- .quick-card>.icon{width:20px;height:20px}
- .quick-card b{font-size:.83rem;line-height:1.2}
+ .quick-grid{grid-template-columns:repeat(4,minmax(0,1fr));gap:7px}
+ .quick-card{gap:7px;padding:9px 7px;min-height:56px;border-radius:13px}
+ .quick-card>.icon{width:22px;height:22px}
+ .quick-card b{font-size:.87rem;line-height:1.16}
  .sectors-panel{margin:9px 12px 0;padding:14px 12px}
  .section-heading h2{font-size:.88rem}
  .section-heading p{font-size:.64rem}
@@ -137,6 +138,12 @@ button{cursor:pointer}
  .trust-footer>div{font-size:.6rem;gap:4px;padding:3px}
  .trust-footer .icon{width:18px;height:18px}
 }
+@media(max-width:520px){
+ .quick-grid{gap:6px}
+ .quick-card{flex-direction:column;gap:5px;min-height:69px;padding:8px 3px;border-radius:12px}
+ .quick-card>.icon{width:23px;height:23px}
+ .quick-card b{font-size:.78rem;letter-spacing:-.025em}
+}
 @media(max-width:365px){
  .hero-scene{min-height:270px}
  .hero-copy{width:69%}
@@ -144,9 +151,9 @@ button{cursor:pointer}
  .hero h1{font-size:1.4rem}
  .cta small{display:none}
  .cta b{font-size:.71rem}
- .quick-card .icon{width:18px;height:18px}
- .quick-card b{font-size:.75rem}
+ .quick-card>.icon{width:21px;height:21px}
+ .quick-card b{font-size:.74rem}
  .sector-photo{aspect-ratio:1.65 / 1}
 }
 @media(min-width:701px) and (max-width:970px){.profile-note{display:none}.profile-panel{grid-template-columns:150px 1fr}}
-@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.cta{transition:none}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.cta,.quick-card{transition:none}}
