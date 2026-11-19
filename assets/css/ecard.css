@@ -159,3 +159,9 @@ button{cursor:pointer}
 }
 @media(min-width:701px) and (max-width:970px){.profile-note{display:none}.profile-panel{grid-template-columns:150px 1fr}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.cta,.quick-card{transition:none}}
+
+/* Standalone verified staff-email action */
+.email-contact{margin:10px 24px 0;padding:10px 16px;border-radius:14px;background:#f7f2ff;color:#54228b;display:flex;align-items:center;gap:10px;font-size:.9rem;font-weight:650}
+.email-contact .icon{width:19px;height:19px;fill:none;stroke:currentColor;stroke-width:2}
+.email-contact a{color:inherit;overflow-wrap:anywhere;text-decoration:underline;text-underline-offset:3px}
+@media(max-width:700px){.email-contact{margin:9px 12px 0;padding:10px 12px;font-size:.8rem}}
