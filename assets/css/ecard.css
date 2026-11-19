@@ -53,6 +53,8 @@ button{cursor:pointer}
 .cta-call{background:linear-gradient(100deg,#ff163b,#e40040)}
 .cta-zalo{background:linear-gradient(110deg,#098bf3,#0758d9)}
 .cta-save{background:linear-gradient(110deg,#7724b6,#4b0f90)}
+.cta.is-pending{background:#f0ebf5;color:#645b72;box-shadow:none;cursor:default}
+.cta.is-pending:hover{transform:none}
 .zalo-mark{display:grid;place-items:center;width:30px;height:30px;border-radius:50%;background:#fff;color:#006fe3;font-weight:950;font-size:1.1rem}
 .links-section{padding:13px 24px 0}
 .quick-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px}
@@ -157,3 +159,9 @@ button{cursor:pointer}
 }
 @media(min-width:701px) and (max-width:970px){.profile-note{display:none}.profile-panel{grid-template-columns:150px 1fr}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.cta,.quick-card{transition:none}}
+
+/* Standalone verified staff-email action */
+.email-contact{margin:10px 24px 0;padding:10px 16px;border-radius:14px;background:#f7f2ff;color:#54228b;display:flex;align-items:center;gap:10px;font-size:.9rem;font-weight:650}
+.email-contact .icon{width:19px;height:19px;fill:none;stroke:currentColor;stroke-width:2}
+.email-contact a{color:inherit;overflow-wrap:anywhere;text-decoration:underline;text-underline-offset:3px}
+@media(max-width:700px){.email-contact{margin:9px 12px 0;padding:10px 12px;font-size:.8rem}}
